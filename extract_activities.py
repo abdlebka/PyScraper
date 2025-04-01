@@ -25,14 +25,36 @@ def extract_with_llm(text):
     """Uses a local LLM (Mistral 7B) to extract structured activity data."""
     print("Extracting structured activities with LLM...")
     prompt = f"""
-    Extract activities ONLY from businesses that are activity providers (like archery, cooking classes, pottery, ziplining, VR arcades, game centers, tourism activities).
-    IGNORE restaurants, retail stores, repair shops, or any business that doesn't offer participatory activities.
+    Extract ONLY genuine participatory activities that customers can book and engage in at this specific business location.
 
-    For each activity provider, identify the specific activities they offer.
-    Return a valid JSON array with fields: name, description.
+    ONLY include:
+    - Real bookable experiences like escape rooms, adventure games, team challenges
+    - Activities with clear game/experience names (e.g., "The Tomb: Raiders of the Sword")
 
-    Format your entire response as valid JSON only, with no additional text or explanation.
-    Use this exact format: [{{"name": "Activity Name", "description": "Activity description"}}, ...]
+    DO NOT include:
+    - Business policies (like phone policies, booking requirements)
+    - General service descriptions 
+    - Duplicate activities with minor phrasing differences
+    - Activities clearly located in other cities (not at this business location)
+    - Business hours, deposits, or procedural information
+
+    For each valid activity, extract:
+    - name: The specific activity name without duration info (e.g., "The Tomb: Raiders" not "The Tomb: Raiders (60-min)")
+    - description: Brief description of what participants actually do
+    - duration: Time required (if mentioned)
+    - difficulty: Difficulty level (if mentioned)
+
+    Return a valid JSON array with this format:
+    [
+      {{
+        "name": "Activity Name", 
+        "description": "What participants actually do during this activity",
+        "duration": "Duration if specified",
+        "difficulty": "Difficulty if specified"
+      }}
+    ]
+
+    Format your response as valid JSON only with no additional text or explanation.
 
     {text}
     """
@@ -54,17 +76,64 @@ def extract_with_llm(text):
         print("Warning: Could not extract valid JSON from LLM response.")
         return []
 
+def get_activity_key(activity):
+    """Create a normalized key for activity deduplication that's more effective."""
+    # Get the name and normalize it
+    name = activity.get("name", "").lower().strip()
+
+    # Many duplicates have the same name but slightly different descriptions
+    # For activities like "The Tomb: Raiders of the Sword", we should just use the name
+    # since these are clearly the same activity with different descriptions
+
+    # Extract the main activity name (before any colon)
+    main_name = name.split(':')[0].strip() if ':' in name else name
+
+    # For activities with more specific names (after colon), use the full name
+    if len(main_name) < 10 and ':' in name:
+        return name
+
+    # For general activities, just use the main part of the name
+    # This handles cases where "The lab: Lockdown" and "The lab: Lockdown Bunker: AI's Martyrdom"
+    # are variations of the same activity
+    return main_name
+
+def initialize_output_file(output_file):
+    """Initialize the output file with an empty JSON array."""
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write('[\n]')
+
+
+def append_activity_to_file(activity, output_file, is_first=False):
+    """Append an activity to the JSON file while maintaining valid JSON structure."""
+    with open(output_file, 'r+', encoding='utf-8') as f:
+        # Move to right before the closing bracket
+        f.seek(0, 2)  # Go to end of file
+        pos = f.tell() - 2  # Position right before the closing bracket
+        if pos < 0:  # If file is too small, start at beginning
+            pos = 0
+        f.seek(pos)
+
+        # Add comma if not the first item
+        if not is_first:
+            f.write(',\n')
+        else:
+            f.write('\n')
+
+        # Add the new activity and close the array
+        json_activity = json.dumps(activity, ensure_ascii=False, indent=2)
+        f.write(json_activity)
+        f.write('\n]')
+
 
 if __name__ == "__main__":
     with open("raw_text.json", "r", encoding="utf-8") as f:
         businesses = json.load(f)
 
     output_file = "activities.json"
+    initialize_output_file(output_file)
 
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write("[")  # Start JSON array
-
-    first_entry = True  # To handle commas properly
+    seen_activities = set()  # Track unique activities
+    is_first_activity = True  # Track if this is the first activity to write
 
     for business in businesses:
         if not business or "text" not in business:
@@ -80,13 +149,14 @@ if __name__ == "__main__":
                 activity["latitude"] = business.get("latitude")
                 activity["longitude"] = business.get("longitude")
 
-                with open(output_file, "a", encoding="utf-8") as f:
-                    if not first_entry:
-                        f.write(",\n")  # Add a comma between entries
-                    json.dump(activity, f, indent=4)
-                    first_entry = False
+                # Check for duplicates before adding
+                activity_key = get_activity_key(activity)
+                if activity_key not in seen_activities:
+                    seen_activities.add(activity_key)
+                    append_activity_to_file(activity, output_file, is_first_activity)
+                    is_first_activity = False
+                    print(f"Added new activity: {activity['name']}")
+                else:
+                    print(f"Skipped duplicate activity: {activity['name']}")
 
-    with open(output_file, "a", encoding="utf-8") as f:
-        f.write("\n]")  # Close JSON array
-
-    print("Extracted activities saved to activities.json")
+    print(f"Extracted {len(seen_activities)} unique activities saved to {output_file}")

@@ -1,11 +1,22 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+from urllib.parse import urljoin, urlparse
 
 
-def scrape_website(url):
-    """Scrapes text content from a website."""
-    print(f"Scraping website: {url}")
+def is_internal_link(base_url, link):
+    """Check if a link is internal to the base URL."""
+    base_domain = urlparse(base_url).netloc
+    link_domain = urlparse(link).netloc
+    return base_domain == link_domain or not link_domain
+
+
+def scrape_website(url, max_depth=1, current_depth=0):
+    """Scrapes text content from a website and follows internal links up to a specified depth."""
+    if current_depth > max_depth:
+        return ""
+
+    print(f"Scraping website: {url} at depth {current_depth}")
     try:
         response = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=30)
         if response.status_code != 200:
@@ -15,6 +26,13 @@ def scrape_website(url):
         soup = BeautifulSoup(response.text, 'html.parser')
         text = ' '.join([p.get_text() for p in soup.find_all(['p', 'li', 'h1', 'h2', 'h3'])])
         print(f"Scraped {len(text)} characters from {url}")
+
+        # Find and follow internal links
+        for link in soup.find_all('a', href=True):
+            link_url = urljoin(url, link['href'])
+            if is_internal_link(url, link_url):
+                text += scrape_website(link_url, max_depth, current_depth + 1)
+
         return text
     except requests.exceptions.SSLError as e:
         print(f"SSL error for {url}: {str(e)}")
