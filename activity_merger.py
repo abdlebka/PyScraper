@@ -49,10 +49,11 @@ def merge_activities_with_places():
             enriched_activities.append(activity)
 
     # Save merged data
-    with open("activities.json", "w") as f:
+    # Save merged data
+    with open("merged_data.json", "w") as f:
         json.dump(enriched_activities, f, indent=4)
 
-    print(f"Enhanced {len(enriched_activities)} activities saved to activities.json")
+    print(f"Enhanced {len(enriched_activities)} activities saved to merged_data.json")
 
 
 if __name__ == "__main__":
