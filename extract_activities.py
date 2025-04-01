@@ -3,24 +3,22 @@ import spacy
 import ollama  # Assumes Mistral 7B is set up locally
 
 
-def filter_activity_text(text):
-    """Uses NLP and keyword matching to extract activity-related sentences."""
-    print("Filtering activity-related sentences...")
-    keywords = ["activities", "things to do", "experience", "book now", "adventure"]
-    sentences = text.split('.')
-    filtered = [s for s in sentences if any(k in s.lower() for k in keywords)]
-    print(f"Extracted {len(filtered)} relevant sentences.")
-    return ' '.join(filtered)
 
 
-def extract_with_llm(filtered_text):
+def extract_with_llm(text):
     """Uses a local LLM (like Mistral 7B) to structure activity data."""
     print("Extracting structured activities with LLM...")
     prompt = f"""
-    Extract all activities from the following text and return them as a valid JSON array with fields: name, description.
+    Extract activities ONLY from businesses that are activity providers (like archery, cooking classes, pottery, ziplining, VR arcades, game centers, tourism activities).
+    IGNORE restaurants, retail stores, repair shops, or any business that doesn't offer participatory activities.
+    
+    For each activity provider, identify the specific activities they offer.
+    Return a valid JSON array with fields: name, description.
+    
     Format your entire response as valid JSON only, with no additional text or explanation.
     Use this exact format: [{{"name": "Activity Name", "description": "Activity description"}}, ...]
-    {filtered_text}
+    
+    {text}
     """
     response = ollama.chat(model='mistral:latest', messages=[{"role": "user", "content": prompt}])
     print("LLM extraction completed.")
@@ -55,8 +53,7 @@ if __name__ == "__main__":
     all_activities = []
     for business in businesses:
         print(f"Processing business: {business['name']}")
-        filtered_text = filter_activity_text(business["text"])
-        activities = extract_with_llm(filtered_text)
+        activities = extract_with_llm(business["text"])
         for activity in activities:
             activity["latitude"] = business["latitude"]
             activity["longitude"] = business["longitude"]
