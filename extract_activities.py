@@ -25,42 +25,90 @@ def extract_with_llm(text):
     """Uses a local LLM (Mistral 7B) to extract structured activity data."""
     print("Extracting structured activities with LLM...")
     prompt = f"""
-    Extract ONLY genuine participatory activities that customers can book and engage in at this specific business location.
+        Extract structured escape room activity information from the text below.
 
-    ONLY include:
-    - Real bookable experiences like escape rooms, adventure games, team challenges
-    - Activities with clear game/experience names (e.g., "The Tomb: Raiders of the Sword")
+        # Input Text
+        {text}
 
-    DO NOT include:
-    - Business policies (like phone policies, booking requirements)
-    - General service descriptions 
-    - Duplicate activities with minor phrasing differences
-    - Activities clearly located in other cities (not at this business location)
-    - Business hours, deposits, or procedural information
+        # Output Format
+        Provide a JSON array of objects. Each object should represent one escape room activity, and contain ONLY the following fields (include a field ONLY if the information is explicitly present in the text):
 
-    For each valid activity, extract:
-    - name: The specific activity name without duration info (e.g., "The Tomb: Raiders" not "The Tomb: Raiders (60-min)")
-    - description: Brief description of what participants actually do
-    - duration: Time required (if mentioned)
-    - difficulty: Difficulty level (if mentioned)
-    - price: Price (if mentioned)
+        -   **name**: The exact name of the activity.
+        -   **description**: The FULL description of the activity, copied VERBATIM from the text. Do not summarize or rephrase.
+        -   **duration**: The duration of the activity (e.g., "60 minutes").
+        -   **difficulty**: The difficulty level of the activity.
+        -   **location**: Location information, if available.
+        -   **price**: Price information, if available.
 
-    Return a valid JSON array with this format:
-    [
-      {{
-        "name": "Activity Name", 
-        "description": "What participants actually do during this activity",
-        "duration": "Duration if specified",
-        "difficulty": "Difficulty if specified"
-        "price": "Price if specified"
-      }}
-    ]
+        # Instructions
 
-    Format your response as valid JSON only with no additional text or explanation.
+        1.  **EXTRACT EXACTLY**: Extract the information exactly as it appears in the text. Do not add any information that is not explicitly provided.
+        2.  **VERBATIM DESCRIPTIONS**: For the "description" field, copy the ENTIRE description exactly as it is written in the text. Do not summarize, interpret, or add details. If there is no description, omit the field.
+        3.  **OMIT MISSING FIELDS**: If a piece of information (e.g., price, difficulty) is not present in the text, do not include that field in the JSON object for that activity.
+        4.  **NO INFERENCE**: Do not infer or assume any information. Only use information that is directly stated.
+        5.  **AVOID HALLUCINATION**: Do not make up descriptions or details. If the description is not present, leave out the description field.
+        6.  **JSON ONLY**: Your output MUST be valid JSON and contain ONLY the JSON array. Do not include any introductory phrases, explanations, or other text outside of the JSON.
+        7.  **NO HASHTAGS**: Do not include records where the name or description starts with or contains hashtags (#).
+        8.  **ACTUAL ACTIVITIES ONLY**: Only extract actual escape room activities. Do not include information about:
+            - Event planning services 
+            - Corporate events
+            - Birthday parties
+            - General description of escape games
+            - Phone numbers or contact information
+            - Job postings or recruitment
+        9.  **STRICT EXTRACTION ONLY**: Only extract information that is explicitly stated in the input text. Do not fabricate or generate any descriptions or details.
+        10. **HIGH CONFIDENCE MATCHES ONLY**: Only include an activity if you are highly confident that all information is directly from the text.
 
-    {text}
+        # Example of INVALID records (DO NOT INCLUDE)
+
+        - Names with hashtags:
+        "name": "#Hacker, #SciFi, #Infiltration, #BeginnerFriendly, #HighTech Z Express",
+
+        - Descriptions with hashtags:
+        "description": "#Adventure, #Fantasy, #SpellCast, #Battle, #90mins, #MagesInTraining",
+
+        - Event planning services:
+        "name": "Birthday Parties",
+        "description": "Our escape rooms are made for all ages. There are no special skills needed to have a great time."
+
+        - Corporate events:
+        "name": "Corporate Events",
+        "description": "Choose Us for Unforgettable Team Building Adventures..."
+
+        - General escape game descriptions:
+        "name": "Escape Games",
+        "description": "An escape game is a real-life experience where participants are locked in a room and must..."
+
+        - Job-related activities:
+        "name": "Bubble Tea Barista",
+        "name": "Game Mastering",
+        "name": "Escape Room Maintenance"
+
+        # Example
+
+        If the text contains:
+
+        "The Lost Treasure Difficulty ★ ★ ★ ★ ★ 3/5 Max 9 players 60 min Outsmart rivals, find the hidden objects and claim the ruby skull treasure within 60 minutes."
+
+        The JSON output should be:
+
+        ```json
+        [
+          {{
+            "name": "The Lost Treasure",
+            "description": "Outsmart rivals, find the hidden objects and claim the ruby skull treasure within 60 minutes.",
+            "duration": "60 min",
+            "difficulty": "3/5"
+          }}
+        ]
+        ```
+
+        # WARNING: DO NOT HALLUCINATE
+        If you're uncertain about any information, exclude it entirely. Never invent descriptions.
+        Only extract activities that are clearly actual escape room experiences.
+        If there's insufficient information to determine if something is an escape room activity, exclude it.
     """
-    response = ollama.chat(model='mistral:latest', messages=[{"role": "user", "content": prompt}])
+    response = ollama.chat(model='mistral:7b-instruct', messages=[{"role": "user", "content": prompt}])
     print("LLM extraction completed.")
 
     content = response['message']['content']
@@ -77,28 +125,6 @@ def extract_with_llm(text):
                 pass
         print("Warning: Could not extract valid JSON from LLM response.")
         return []
-
-def get_activity_key(activity):
-    """Create a normalized key for activity deduplication that's more effective."""
-    # Get the name and normalize it
-    name = activity.get("name", "").lower().strip()
-
-    # Many duplicates have the same name but slightly different descriptions
-    # For activities like "The Tomb: Raiders of the Sword", we should just use the name
-    # since these are clearly the same activity with different descriptions
-
-    # Extract the main activity name (before any colon)
-    main_name = name.split(':')[0].strip() if ':' in name else name
-
-    # For activities with more specific names (after colon), use the full name
-    if len(main_name) < 10 and ':' in name:
-        return name
-
-    # For general activities, just use the main part of the name
-    # This handles cases where "The lab: Lockdown" and "The lab: Lockdown Bunker: AI's Martyrdom"
-    # are variations of the same activity
-    return main_name
-
 def initialize_output_file(output_file):
     """Initialize the output file with an empty JSON array."""
     with open(output_file, 'w', encoding='utf-8') as f:
@@ -134,8 +160,7 @@ if __name__ == "__main__":
     output_file = "activities.json"
     initialize_output_file(output_file)
 
-    seen_activities = set()  # Track unique activities
-    is_first_activity = True  # Track if this is the first activity to write
+    is_first_activity = True  # Initialize the flag
 
     for business in businesses:
         if not business or "text" not in business:
@@ -151,14 +176,8 @@ if __name__ == "__main__":
                 activity["latitude"] = business.get("latitude")
                 activity["longitude"] = business.get("longitude")
 
-                # Check for duplicates before adding
-                activity_key = get_activity_key(activity)
-                if activity_key not in seen_activities:
-                    seen_activities.add(activity_key)
-                    append_activity_to_file(activity, output_file, is_first_activity)
-                    is_first_activity = False
-                    print(f"Added new activity: {activity['name']}")
-                else:
-                    print(f"Skipped duplicate activity: {activity['name']}")
-
-    print(f"Extracted {len(seen_activities)} unique activities saved to {output_file}")
+                # Add all activities without checking for duplicates
+                append_activity_to_file(activity, output_file, is_first_activity)
+                is_first_activity = False
+                print(f"Added activity: {activity.get('name', 'Unnamed activity')}")
+    print(f"Extraction complete. Results saved to {output_file}")

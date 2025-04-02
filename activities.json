@@ -1,72 +1,44 @@
 [
 {
-  "name": "Jungle Safari",
-  "description": "Embark on an immersive adventure in a jungle-themed escape room filled with diverse puzzles.",
+  "name": "Defend the Tower",
+  "description": "Join forces with allies and defend the tower against the incoming siege in this action-packed 60 minute experience.",
   "duration": "60 minutes",
-  "latitude": 43.655663,
-  "longitude": -79.3846061
+  "latitude": 43.7541119,
+  "longitude": -79.276337
 },
 {
-  "name": "The Lost Treasure",
-  "description": "Uncover clues and solve puzzles to find a lost treasure in this family-friendly adventure.",
-  "difficulty": "★ ★ ★ ★ 3/5",
-  "latitude": 43.655663,
-  "longitude": -79.3846061
+  "name": "Mystery Mansion",
+  "description": "Uncover the secrets of the Mystery Mansion as you search for clues and solve puzzles to escape before time runs out in this thrilling 90 minute adventure.",
+  "duration": "90 minutes",
+  "latitude": 43.7541119,
+  "longitude": -79.276337
 },
 {
-  "name": "Godfather",
-  "description": "Enter the world of the mafia and solve puzzles to escape within 60 minutes.",
-  "difficulty": "★ ★ ★ ★ 4/5",
-  "latitude": 43.655663,
-  "longitude": -79.3846061
+  "name": "Alien Invasion",
+  "description": "Battle extraterrestrial forces in a race against time to save humanity. Can you decipher the clues and find the antidote before it's too late in this 60 minute challenge?",
+  "duration": "60 minutes",
+  "latitude": 43.7541119,
+  "longitude": -79.276337
 },
 {
-  "name": "Haunted Toystore",
-  "description": "Face your fears in this chilling horror-themed escape room, filled with spine-chilling challenges.",
-  "difficulty": "★ ★ ★ ★ 3/5",
-  "latitude": 43.655663,
-  "longitude": -79.3846061
+  "name": "Pirate's Curse",
+  "description": "Set sail on a daring adventure to find the legendary treasure. Solve riddles, uncover hidden secrets and outwit your rivals in this swashbuckling 60 minute escapade.",
+  "duration": "60 minutes",
+  "latitude": 43.7541119,
+  "longitude": -79.276337
 },
 {
-  "name": "Hannibal",
-  "description": "Dive into a thrilling adventure based on the TV series, solving puzzles within 60 minutes.",
-  "difficulty": "★ ★ ★ ★ 5/5",
-  "latitude": 43.655663,
-  "longitude": -79.3846061
+  "name": "The Prison Break",
+  "description": "Escape from a high-security prison using cunning, intuition and your wits in this intense 90 minute adventure. Can you break free before the clock runs out?",
+  "duration": "90 minutes",
+  "latitude": 43.7541119,
+  "longitude": -79.276337
 },
 {
-  "name": "Exorcist",
-  "description": "Experience a terrifying exorcism-themed escape room, filled with challenging puzzles.",
-  "difficulty": "★ ★ ★ ★ 4/5",
-  "latitude": 43.655663,
-  "longitude": -79.3846061
-},
-{
-  "name": "Bomb Squad",
-  "description": "Defuse a bomb in this intense, single-room escape game designed for the best minds.",
-  "difficulty": "★ ★ ★ ★ ★ 5/5",
-  "latitude": 43.655663,
-  "longitude": -79.3846061
-},
-{
-  "name": "Fairy Tale",
-  "description": "Solve puzzles based on popular fairytales in this magical, enchanting escape room.",
-  "difficulty": "★ ★ ★ ★ 4/5",
-  "latitude": 43.655663,
-  "longitude": -79.3846061
-},
-{
-  "name": "Magic School",
-  "description": "Discover the magic within an old school, where spells and puzzles await your team.",
-  "difficulty": "★ ★ ★ ★ ★ 5/5",
-  "latitude": 43.655663,
-  "longitude": -79.3846061
-},
-{
-  "name": "FairyTale",
-  "description": "Embark on a magical adventure filled with puzzles inspired by fairy tales.",
-  "duration": "60 min",
-  "latitude": 43.655663,
-  "longitude": -79.3846061
+  "name": "The Heist",
+  "description": "Assemble a team of skilled thieves and execute the perfect heist in this thrilling 60 minute challenge. Outsmart security, find the loot and make your getaway before you're caught.",
+  "duration": "60 minutes",
+  "latitude": 43.7541119,
+  "longitude": -79.276337
 }
 ]

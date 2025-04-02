@@ -1,0 +1,593 @@
+[
+  {
+    "name": "60 Mins",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "#Hacker, #SciFi, #Infiltration, #BeginnerFriendly, #HighTech",
+    "duration": "60 Mins",
+    "difficulty": "2/5"
+  },
+  {
+    "name": "Z Express",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "#Thriller, #LiveActor, #TrainEscape, #Zombie, #90mins",
+    "duration": "90 Mins",
+    "difficulty": "3/5"
+  },
+  {
+    "name": "Defend the Magic Academy",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "As new mages, you will embark on an adventure, mastering lessons along the way to acquire the abilities necessary to aid your academy in reclaiming a powerful relic known as the Stone of Wisdom. Once discovered and properly placed, the Stone of Wisdom will restore the protective force field around the school, securing the future of the academy once and for all.",
+    "duration": "90 minutes",
+    "difficulty": "3/5",
+    "location": "1187 Kennedy Rd, Scarborough"
+  },
+  {
+    "name": "The Red Admiral",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "#Infiltration, #Spy, #ColdWar, #HighTech, #HighDifficulty",
+    "duration": "60 Mins",
+    "difficulty": "4/5"
+  },
+  {
+    "name": "Virus Outbreak: The Final Hour",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "#SaveTheWorld, #AgainstTheClock, #SecretLab, #Antidote",
+    "duration": "60 Mins",
+    "difficulty": "3/5"
+  },
+  {
+    "name": "Shadows in the Dark",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "#Mystery, #Suspense, #Detective"
+  },
+  {
+    "name": "Wild West Showdown",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "It's a simple time with two straightforward rules: everything can be bought with enough gold, and don't get shot. It's a barren land where the undertaker is the busiest person in town, and next is the sheriff. A group of strangers arrives in town by coach—what will await them? Fame and glory, or death and destruction?",
+    "duration": "120 minutes",
+    "difficulty": "4/5",
+    "location": "#7 7501 Woodbine Ave, Markham"
+  },
+  {
+    "name": "Once Upon a Time",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Beast or beauty, wicked or charming, all your favourite fairy tale characters have been invited. Gather all the guests to ensure the party is a success.",
+    "duration": "60 minutes",
+    "difficulty": "2/5",
+    "location": "#7 7501 Woodbine Ave, Markham"
+  },
+  {
+    "name": "Escape Room Experience",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Solve puzzles, find clues, and escape the room within 60 minutes. No electronic devices are allowed and lockers are provided to store your phones and belongings before you go in the room. We only give full refunds for cancellations made 24 hours prior to your booking time. Any last-minute cancellations within 24 hours will not be refunded. There are many non-scary rooms available, including Godfather, Jungle Safari, The lost treasure, Magic School, Fairy Tale, and Bomb Squad.",
+    "duration": "60 minutes",
+    "location": "In Downtown Toronto\n130 Dundas Street West, 3rd Floor\nToronto, Ontario, M5G 1C3"
+  },
+  {
+    "name": "Game Master (Full-time/Part-time)",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Responsibilities: Welcome all customers warmly upon arrival and provide efficient check-in service. Offer recommendations, explain rules, and provide assistance as necessary. Process payments accurately and responsibly. Familiarize guests with escape room rules, themes, and background stories. Monitor game room progress and offer hints when needed. Assist with operations at the bubble tea bar when required. Perform as the NPC in two of our escape rooms when required. Maintain the cleanliness and tidiness of the lobby, board game lounge, escape rooms, washrooms, and other facility areas.",
+    "location": {
+      "Markham": null,
+      "Scarborough": null
+    }
+  },
+  {
+    "name": "Bubble Tea Barista (Full-time/Part-time)",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Responsibilities: Welcome and greet customers with warmth and hospitality as they arrive. Craft and serve a variety of delicious bubble tea drinks with precision and flair. Provide recommendations and assistance to customers in selecting bubble tea drinks.",
+    "location": {
+      "Markham": "Markham location",
+      "Scarborough": null
+    }
+  },
+  {
+    "name": "Character Embodiment",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Bring the Wild West to life by fully embodying the character of a rough and sarcastic bartender with an authentic Western accent. Immerse customers in a captivating storyline through engaging interactions, ensuring an unforgettable and immersive experience.",
+    "location": "Markham location"
+  },
+  {
+    "name": "Dynamic Improv and Ad-Libbing",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Showcase your talent for dynamic improv and ad-libbing to respond to the unpredictability of each customer group. Enhance the overall experience with quick thinking on the spot, creating memorable and personalized moments for every escape room team.",
+    "location": "Markham location"
+  },
+  {
+    "name": "Customer Interaction",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Interact with customers in a manner that enhances their immersion, creating an atmosphere that feels like stepping into a Western tale. Ensure customers leave with stories to tell, having experienced the charm and wit of your character throughout their escape room adventure.",
+    "location": "Markham location"
+  },
+  {
+    "name": "Game Master",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Train as a Game Master to guide and enhance the escape room experience for groups, adding an extra layer of excitement to their journey. Contribute to the overall adventure by assisting teams in overcoming puzzles and celebrating their victories.",
+    "location": "Markham location"
+  },
+  {
+    "name": "Behind-the-Scenes Support",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Learn the intricacies of escape room maintenance, contributing to the seamless operation of our immersive environments. Take on the responsibility of ensuring each escape room is cleaned and reset to perfection, ready for the next group of adventurers.",
+    "location": "Markham location"
+  },
+  {
+    "name": "Customer Service",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Assist in reception duties, including processing payments and offering hints to groups when needed. Elevate the customer experience by seamlessly transitioning between your immersive character role and practical tasks that keep the escape room business running smoothly.",
+    "location": "Markham location"
+  },
+  {
+    "name": "Quick Memorization",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Exhibit strong memorization skills to seamlessly deliver lines and maintain character consistency throughout the entire escape room experience. Adapt to unexpected scenarios, ensuring a fluid and authentic performance that adds an extra layer of excitement to the escape room narrative.",
+    "location": "7501 Woodbine Ave Markham, ON L3R 2W1\n(905) 695 9556\ninfo@omventure.ca"
+  },
+  {
+    "name": "Immersive Storytelling",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Contribute to the creation of an immersive escape room narrative by infusing your character with depth, authenticity, and a touch of humour. Collaborate with the game development team to ensure a seamless integration of your character into the overall storyline. Previous experience in the theatre or film industry is preferred but not mandatory."
+  },
+  {
+    "name": "Corporate Team Building Event",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Experience a unique and engaging team-building event at Omventure, Ontario's largest escape room facility. The spacious and fully equipped location can accommodate up to 100 people and offers various services such as outside catering, hosts, presentations, and customizable experiences for marketing events, networking sessions, award shows, and holiday parties.",
+    "location": "7501 Woodbine Ave Markham, ON L3R 2W1\n(905) 695 9556\ninfo@omventure.ca"
+  },
+  {
+    "name": "#Thriller",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "The train ride to Geumdo Island was meant to be a routine beginning—a new role with Barrier Corp, a cutting-edge pharmaceutical giant in South Korea. But from the moment you stepped onto the train, something felt wrong. Unsettling noises, missing crew members, and restricted areas are only the beginning. Now, you’re stranded in a facility shrouded in secrets, where every turn brings new dangers. What began as a promising career move has spiralled into a struggle for survival. Can you outsmart the shadows of Geumdo Island and escape with your life, or will its hidden horrors trap you forever? WARNING: This experience is for people 16 and older only. It involves confined spaces, loud sounds, and bright flashing lights, which may not be suitable for individuals with claustrophobia, photosensitivity, epilepsy, pregnancy, heart disease, or other serious medical conditions. Omventure Canada reserves the right to deny entry to anyone under 16.",
+    "duration": "90 minutes",
+    "difficulty": "3/5",
+    "location": "1187 Kennedy Rd, Scarborough"
+  },
+  {
+    "name": "#Dark Altar",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "An archeology fanatic is the head of the mysterious and spooky Copenheimer Museum, where he hopes to use a dark ritual to give himself eternal, Godly power.",
+    "duration": "60 minutes",
+    "difficulty": "4/5",
+    "location": "#7 7501 Woodbine Ave, Markham"
+  },
+  {
+    "name": "Entering the museum and stopping the ritual",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Those who enter the museum must face the dark power and stop the ritual before it’s too late.",
+    "location": "7501 Woodbine Ave Markham, ON L3R 2W1\n1187 Kennedy Rd Scarborough, ON M1P 2L2"
+  },
+  {
+    "name": "BOOK NOW TORONTO'S PREMIUM ESCAPE GAMES & IMMERSIVE ADVENTURES ESCAPE ROOMS x BOARD GAME CAFE",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "duration": "60 Mins",
+    "difficulty": "2/5",
+    "location": "Scarborough Games, 1187 Kennedy Rd (647) 800 8038"
+  },
+  {
+    "name": "Scarborough Games Shut Down",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "duration": "60 Mins",
+    "difficulty": "2/5",
+    "location": "Scarborough Games, 1187 Kennedy Rd (647) 800 8038"
+  },
+  {
+    "name": "#Hacker, #SciFi, #Infiltration, #BeginnerFriendly, #HighTech Z Express",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "duration": "90 Mins",
+    "difficulty": "3/5"
+  },
+  {
+    "name": "#Thriller, #LiveActor, #TrainEscape, #Zombie, #90mins Defend the Magic Academy",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "duration": "90 Mins",
+    "difficulty": "3/5"
+  },
+  {
+    "name": "#Adventure, #Fantasy, #SpellCast, #Battle, #90mins The Magic Academy",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "duration": "90 Mins",
+    "difficulty": "3/5"
+  },
+  {
+    "name": "#Puzzle, #Action, #The Lost Expedition",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "duration": "60 Mins",
+    "difficulty": "4/5"
+  },
+  {
+    "name": "#Dungeon, #Escape, #Dragon's Den",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "duration": "60 Mins",
+    "difficulty": "4/5"
+  },
+  {
+    "name": "#Mystery, #The Lost Temple",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "duration": "60 Mins",
+    "difficulty": "5/5"
+  },
+  {
+    "name": "Nyctophobia: Fear of the dark",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Book Now #Haunted, #PitchDark, #Horror, #Exploration, #18+\nCan you find all the secrets hidden in the shadows before time runs out? Or do you suffer from Nyctophobia? NYCTOPHOBIA WARNING: 18+ only. Nyctophobia contains violent content, loud noises and extremely low visibility. It is not recommended for those who suffer from heart conditions, seizures or other serious medical conditions. This experience is not suitable for children or pregnant women.\n\nFor your safety, Omventure Canada reserves the right to deny entry to pregnant women and anyone under 18.\nPlease be aware that this escape room incorporates themes related to séances and occults, which could be sensitive to certain religious beliefs.",
+    "duration": "60 minutes",
+    "difficulty": "???",
+    "location": "1187 Kennedy Rd, Scarborough"
+  },
+  {
+    "name": "Shut Down",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Book Now #Hacker, #SciFi, #Infiltration, #BeginnerFriendly, #HighTech\nIn the year 2076, the Frost Corp dominated the world. They had used the \"Frost Queen\" system to infiltrate every pixel, claiming it was for freedom and protection. However, their unethical sale of personal data has sparked outrage and also rebellion.",
+    "duration": "60 minutes",
+    "difficulty": "2/5",
+    "location": "1187 Kennedy Rd, Scarborough"
+  },
+  {
+    "name": "Escape rooms challenge",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Escape rooms challenge you mentally, encourage imagination, and create memorable moments. That’s why it’s one of the most popular venues to host birthday parties! Omventure Canada is one of the top premium escape room businesses in the GTA. We provide high-tech interactive puzzles, engaging storylines, and vivid aesthetics - all to ensure an immersive and unforgettable experience. All of our birthday party packages come with a mission in an escape room of your choice, pizza, drinks, and time to play board games!",
+    "location": [
+      {
+        "name": "mARKHAM Location #7 - 7501 Woodbine Ave Markham, ON L3R 2W1",
+        "email": "info@omventure.ca",
+        "phone": "(905) 695 9556"
+      },
+      {
+        "name": "SCARBORoUGH Location Upper - 1187 Kennedy Rd Scarborough, ON M1P 2L2",
+        "email": "info@omventure.ca",
+        "phone": "(647) 800 8038"
+      }
+    ]
+  },
+  {
+    "name": "Robotcalypse",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "#Robots, #Exploration, #SciFi, #Battle, #90mins, #TeamWork #SpaceTravel Take a futuristic journey aboard a spaceship! Unfortunately, it’s not all smooth sailing. Forced to make an emergency landing, you and your crew find yourselves on a distant planet populated entirely by robots! All you want is to repair your spaceship and be on your way, but that won’t be easy so long as the evil robot Zybar rules.",
+    "duration": "#90mins",
+    "location": "7501 Woodbine Ave, Markham"
+  },
+  {
+    "name": "The Kingdom of Cats",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "You have been invited to a tea party by the Queen, as you are the greatest detectives in the human world. Will you be able to find the King and save the Cat Kingdom from falling into chaos?",
+    "duration": "60 minutes",
+    "difficulty": "3/5",
+    "location": "7501 Woodbine Ave, Markham"
+  },
+  {
+    "name": "#Investigation, #HighTech, #SciFi, #Mystery, #BeginnerFriendly",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Now you, a special investigation unit, have been called to enter Dennis Christopher's study room in search for clues. mARKHAM Location #7 - 7501 Woodbine Ave Markham, ON L3R 2W1.",
+    "duration": "60 minutes",
+    "difficulty": "3/5",
+    "location": "7501 Woodbine Ave, Markham"
+  },
+  {
+    "name": "#Haunted, #Horror, #16+, #120mins, #liveActor, #FearFilledEscape",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Your group makes your way inside Motel Betty, only to find an empty front desk with a keycard that reads '011.' Tired and not wanting to look for somewhere else to spend the night, you grab the keycard and head through the dark corridor. Little do you know, this will be a night filled with horror and insanity.",
+    "duration": "120 minutes",
+    "location": "7501 Woodbine Ave, Markham"
+  },
+  {
+    "name": "SINISTER CIRCUS: The Joker's Legacy",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "description": "Entertain the Joker by solving his riddles, don’t let his mind grow idle or he’ll take his anger out on you! Can you survive a descent into the Joker’s world of madness and murder?",
+    "duration": "75 minutes",
+    "difficulty": "5/5",
+    "location": "7501 Woodbine Ave, Markham"
+  },
+  {
+    "name": "Booking an Escape Room",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "Book your room and contact us to see how we can help make any special occasion even better. Just click the ‘Book Now’ button, and it will direct you to the booking page. Feel free to pay now or pay later. You can add more people after booking. Simply let our staff know when you walk in. We’ll adjust the booking for you."
+  },
+  {
+    "name": "Rules and Regulations",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "All ages can enjoy our games. Players 12 years or younger must be accompanied by at least 1 adult that is at least 18 years old. A waiver must be signed by a parent or guardian. No electronic devices are allowed in our rooms. Lockers are provided to store your phones and your belongings before you go in the room. Any cancellation fees? We only give full refunds for cancellations made 24 hours prior to your booking time. We can not give a refund for any last-minute cancellations within 24 hours. "
+  },
+  {
+    "name": "Room Selection",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "If you are not a fan of horror, we have many non-scary rooms including Godfather, Jungle, Pirate, Magic School, Fairy Tale, and Bomb Disposal."
+  },
+  {
+    "name": "Game Availability",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "We never put strangers in your room. It’ll be only your team members playing with you in the room."
+  },
+  {
+    "name": "Jungle Safari",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "Embark on an immersive adventure with your chosen group, whether it’s a small gathering, or a larger team. Our escape rooms are family-friendly and fun for everyone. All rooms have color based puzzles. TRADITIONAL ROOMS Discover diverse adventures in our escape rooms. With multiple themed spaces and exciting puzzles, it’s perfect for group fun, team buildng and birthday parties! Jungle Safari Difficulty ★ ★ ★ ★ ★ 5/5 Max 9 players 60 min",
+    "duration": "Not specified",
+    "difficulty": "Max 9 Players",
+    "location": "130 Dundas Street West, 3rd Floor Toronto, Ontario, M5G 1C3",
+    "price": "$36 + tax per person family friendly"
+  },
+  {
+    "name": "The Lost Treasure",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape within 60 minutes. In this adventure, you'll have to outsmart rivals, find the hidden objects, and claim the ruby skull treasure within 60 minutes.",
+    "duration": "60 minutes",
+    "difficulty": "Not explicitly mentioned",
+    "location": "130 Dundas Street West, Toronto, Ontario, M5G 1C3",
+    "price": "$45 (implied from 'You might also like these Escape Rooms')"
+  },
+  {
+    "name": "GODfather",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "Are you ready for an adventure? All rooms have color based puzzles. TRADITIONAL ROOMS Discover diverse adventures in our escape rooms. With multiple themed spaces and exciting puzzles, it’s perfect for group fun, team buildng and birthday parties! GODfather Difficulty ★ ★ ★ ★ ★ 4/5 Max 9 players 60 min",
+    "duration": "60 minutes",
+    "difficulty": "4/5"
+  },
+  {
+    "name": "Hannibal",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "Difficulty ★ ★ ★ ★ ★ 5/5 Horror 2-9 players 60 min There is a killer psychopath on the loose, chopping up victims every day. Protests across the country demand immediate action from government. You and your team of FBI agents have been tasked to bring down the killer psychopath. The case gets political when the killer kidnaps the senator’s daughter and threatens to kill her. You are running out of time, so you decide to visit the infamous Hannibal to ask him for a lead. But when your team enters the prison, you find that everyone is gone. The security system was triggered and the emergency light is on. The door locks shut behind you. Someone is lurking in the shadows.",
+    "duration": "60 minutes",
+    "difficulty": "⭐⭐⭐⭐⭐",
+    "location": "130 Dundas Street West, Toronto",
+    "price": "$36 + tax per person family friendly"
+  },
+  {
+    "name": "GODfATHER",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "Brave our scary room – spine-chilling challenges for thrillseekers and horror enthusiasts. With a difficulty level of ★ ★ ★ ★ ★ 4/5, this room can accommodate up to 9 players for a duration of 60 minutes.",
+    "duration": "60 minutes",
+    "difficulty": "★ ★ ★ ★ 4/5"
+  },
+  {
+    "name": "Corporate Events",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "Unlock Success Together: Elevate Team Bonding with Our Escape Room! Choose Us for Unforgettable Team Building Adventures, Where Puzzles Forge Stronger Connections and Collaboration Prevails. Dare to Challenge, Unite to Triumph!",
+    "location": "130 Dundas Street West, Toronto"
+  },
+  {
+    "name": "Birthday Parties",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "Our escape rooms are made for all ages. There are no special skills needed to have a great time. Bring your friends, family, co-workers, field trip classmates and have fun."
+  },
+  {
+    "name": "Special Events & Group Activities",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "Whatever the celebration Enigma is here to take it to another level. Book your room and contact us to see how we can help make any special occasion even better."
+  },
+  {
+    "name": "Escape Games",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape and/or find the missing item within a set amount of time. You must solve the escape room in 60 minutes or less.",
+    "duration": "60 minutes"
+  },
+  {
+    "name": "HAUNTED TOYSTORE",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "Experience horrifying challenges in this escape room. With a difficulty level of ★ ★ ★ ★ ★ 5/5, this room can accommodate up to 9 players for a duration of 60 minutes.",
+    "duration": "60 minutes",
+    "difficulty": "★ ★ ★ ★ 3/5"
+  },
+  {
+    "name": "EXTRACT_MISSING_ROOM_NAME",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "This escape room is not provided with a name or description."
+  },
+  {
+    "name": "JUNGLE SAFARI",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "With multiple themed spaces and exciting puzzles, it’s perfect for group fun, team building and birthday parties!",
+    "duration": "60 min",
+    "difficulty": "5/5"
+  },
+  {
+    "name": "EXORCIST",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "Can you outsmart the devil? Solve puzzles and defeat the Exorcist within 60 minutes.",
+    "duration": "60 min",
+    "difficulty": "4/5"
+  },
+  {
+    "name": "ESCAPE CUBES",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "Dive into an exhilarating adventure in our specially designed escape room – a single space filled with exciting puzzles for the best minds! (Bomb squad Difficulty ★ ★ ★ ★ ★ 5/5 Max 3 players 60 min)",
+    "duration": "60 min",
+    "difficulty": "5/5"
+  },
+  {
+    "name": "Fairytale",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "Enter a whimsical world and help the fairytale characters overcome their obstacles. (Price: $45)",
+    "duration": "60 min",
+    "difficulty": "2/5"
+  },
+  {
+    "name": "Mystery Mansion",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "Unravel the secrets of the Mystery Mansion! (Location: 123 Main Street, Anytown USA)",
+    "duration": "60 min",
+    "difficulty": "4/5"
+  },
+  {
+    "name": "FAIRYTALE",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "duration": "60 min"
+  },
+  {
+    "name": "MAGIC SCHOOL",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "duration": "60 min"
+  },
+  {
+    "name": "Corporate Event at Enigma Room",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "Conveniently located at 130 Dundas St West, Toronto (next to Toronto Metropolitan University). Past clients include Google, Apple, Uber, Microsoft, Coca-Cola, Pepsi, Cineplex, RBC and more. To book your next corporate event, please call 647 859 1143"
+  },
+  {
+    "name": "Godfather Escape Room",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "A non-scary escape game with the theme of fairy tales. Players will need to use elements of the room, their collective knowledge, and wits to discover clues, solve puzzles, and find their way out of the enchanted forest within a set amount of time.",
+    "duration": "60 minutes"
+  },
+  {
+    "name": "Magic School",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "Welcome to the Magic School where 4 faculties compete for the magic goblet. To be admitted to Magic School, you must pass an entrance exam and prove that you belong among the wizardkind. If you fail to complete all tasks in 60 minutes, you will have to go back to the ordinary Muggle world – and you won’t remember a thing! $36 + tax per person family friendly Book Now Previous image Next image",
+    "duration": "Not specified",
+    "difficulty": "★ ★ ★ ★ ★ 5/5",
+    "location": "Downtown Toronto 🍁 130 Dundas Street West, 3rd Floor Toronto, Ontario, M5G 1C3"
+  },
+  {
+    "name": "Haunted Toy Store",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "Difficulty: ⭐⭐⭐⭐ Max 9 Players The Exorcist Difficulty: ⭐⭐⭐⭐ Max 9 Players Jungle Safari Difficulty: ⭐⭐⭐⭐ Max 9 Players The Lost Treasure Difficulty: ⭐⭐⭐ Max 9 Players Fairytales Difficulty: ⭐⭐⭐⭐ Max 7 Players Magic School Difficulty: ⭐⭐⭐⭐⭐ Max 7 Players Bomb Squad Difficulty: ⭐⭐⭐⭐ Max 3 Players Godfather Difficulty: ⭐⭐⭐⭐⭐ Max 9 Players Hannibal Difficulty: ⭐⭐⭐⭐⭐ Max 9 Players",
+    "duration": "60 minutes",
+    "difficulty": "⭐⭐⭐⭐ Max 9 Players",
+    "location": "130 Dundas Street West, Toronto, Ontario, M5G 1C3",
+    "price": "$36 + tax per person family friendly"
+  },
+  {
+    "name": "The Exorcist",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "News has spread of a small child trapped in an old, mysterious house. Evil is lurking in every corner. You hear a cry for help, so you and your friends run in to save the child, but you notice something is not right with this house. You hear strange noises. You are not alone. Something dark is lurking in the shadows. Will you save the child in time? This room has puzzles feature color elements, is a dark room.",
+    "duration": "60 minutes",
+    "difficulty": "Max 9 Players",
+    "location": "130 Dundas Street West, Toronto, Ontario, M5G 1C3",
+    "price": "$36 + tax per person family friendly Book Now"
+  },
+  {
+    "name": "Fairytales",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape within 60 minutes. In this fairy tale-themed room, you'll have to find your way out using the power of your imagination.",
+    "duration": "60 minutes",
+    "difficulty": "Max 7 Players",
+    "location": "130 Dundas Street West, Toronto, Ontario, M5G 1C3"
+  },
+  {
+    "name": "Bomb Squad",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "You must defuse the bomb now! This room has puzzles feature color elements 2-3 players 60 min $36 + tax per person family friendly Book Now Previous image Next image You might also like these Escape Rooms Haunted Toy Store Difficulty: ⭐⭐⭐⭐ Max 9 Players The Exorcist Difficulty: ⭐⭐⭐⭐ Max 9 Players Jungle Safari Difficulty: ⭐⭐⭐⭐ Max 9 Players The Lost Treasure Difficulty: ⭐⭐⭐ Max 9 Players Fairytales Difficulty: ⭐⭐⭐⭐ Max 7 Players Magic School Difficulty: ⭐⭐⭐⭐⭐ Max 7 Players Bomb Squad Difficulty: ⭐⭐⭐⭐ Max 3 Players Godfather Difficulty: ⭐⭐⭐⭐⭐ Max 9 Players Hannibal Difficulty: ⭐⭐⭐⭐⭐ Max 9 Players Bomb Squad Difficulty ★ ★ ★ ★ ★ 5/5 You’ve found a bomb in the city center today. It’s so powerful that it can turn the entire city to dust if it detonates. The bomb is set to explode in 60 minutes! You are the top bomb technicians, you need to examine the bomb, and it cannot be transported away from the laboratory. It means there is only one way out.",
+    "duration": "Not specified",
+    "difficulty": "Not specified",
+    "location": "130 Dundas Street West, 3rd Floor Toronto, Ontario, M5G 1C3",
+    "price": "$36 + tax per person"
+  },
+  {
+    "name": "Godfather",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "You are a member of the Corleone mafia family – one of the most powerful families in the Big Apple until now. Dark times have come to the Corleone family, and you need a way out before they take you out with the trash. You and your mafia members need a backup plan so you decide to work for the new and prosperous Tattaglia mafia family. To deserve their trust, you must complete a dangerous task – steal the Corleone’s diary. You have 60 minutes before anyone finds out. Will you make it out alive? Or will you be sleeping with the fishes? $36 + tax per person family friendly Book Now Previous image Next image",
+    "duration": "Not specified",
+    "difficulty": "Not specified",
+    "location": "130 Dundas Street West, 3rd Floor Toronto, Ontario, M5G 1C3"
+  },
+  {
+    "name": "Godfather Difficulty ★ ★ ★ ★ ★ 4/5",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "$36 + tax per person family friendly 2-9 players 60 min You are a member of the Corleone mafia family – one of the most powerful families in the Big Apple until now.",
+    "duration": "60 min",
+    "difficulty": "★ ★ ★ ★ ★ 4/5"
+  },
+  {
+    "name": "Escape Room Activity",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "You suddenly find yourself trapped in a game. The only way to get out is to play and win the game. Will you escape? $36 + tax per person family friendly Book Now Difficulty ★ ★ ★ ★ ★ 5/5 2-9 players 60 min",
+    "duration": "60 min",
+    "difficulty": "5/5"
+  },
+  {
+    "name": "Hannibal (Infamous)",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "Difficulty ★ ★ ★ ★ ★ 5/5 Horror 2-9 players 60 min There is a killer psychopath on the loose, chopping up victims every day. Protests across the country demand immediate action from government. You and your team of FBI agents have been tasked to bring down the killer psychopath. The case gets political when the killer kidnaps the senator’s daughter and threatens to kill her. You are running out of time, so you decide to visit the infamous Hannibal to ask him for a lead. But when your team enters the prison, you find that everyone is gone. The security system was triggered and the emergency light is on. Someone is lurking in the shadows.",
+    "duration": "60 min",
+    "difficulty": "5/5",
+    "price": "$36 + tax per person family friendly"
+  },
+  {
+    "name": "Team Building Event",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "Perfect team building exercise to activate your team’s problem-solving abilities. Escape rooms are conveniently located in Downtown Toronto. We offer corporate events, birthday parties and special events. Past clients include Google, Apple, Uber, Microsoft, Coca-Cola, Pepsi, Cineplex, TD, CIBC, Amazon, RBC, and more.",
+    "location": "130 Dundas Street West, Toronto",
+    "price": "$36 plus Tax per person"
+  },
+  {
+    "name": "The lost treasure",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "description": "No description provided.",
+    "duration": "Not specified",
+    "difficulty": "Not specified",
+    "location": "130 Dundas Street West, 3rd Floor Toronto, Ontario, M5G 1C3"
+  }
+]
