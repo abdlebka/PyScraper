@@ -23,7 +23,6 @@ def chunk_text(text, max_tokens=3000):
 
 def extract_with_llm(text):
     """Uses a local LLM (Mistral 7B) to extract structured activity data."""
-    print("Extracting structured activities with LLM...")
     prompt = f"""
         Extract structured escape room activity information from the text below.
 
@@ -58,56 +57,8 @@ def extract_with_llm(text):
             - Job postings or recruitment
         9.  **STRICT EXTRACTION ONLY**: Only extract information that is explicitly stated in the input text. Do not fabricate or generate any descriptions or details.
         10. **HIGH CONFIDENCE MATCHES ONLY**: Only include an activity if you are highly confident that all information is directly from the text.
-
-        # Example of INVALID records (DO NOT INCLUDE)
-
-        - Names with hashtags:
-        "name": "#Hacker, #SciFi, #Infiltration, #BeginnerFriendly, #HighTech Z Express",
-
-        - Descriptions with hashtags:
-        "description": "#Adventure, #Fantasy, #SpellCast, #Battle, #90mins, #MagesInTraining",
-
-        - Event planning services:
-        "name": "Birthday Parties",
-        "description": "Our escape rooms are made for all ages. There are no special skills needed to have a great time."
-
-        - Corporate events:
-        "name": "Corporate Events",
-        "description": "Choose Us for Unforgettable Team Building Adventures..."
-
-        - General escape game descriptions:
-        "name": "Escape Games",
-        "description": "An escape game is a real-life experience where participants are locked in a room and must..."
-
-        - Job-related activities:
-        "name": "Bubble Tea Barista",
-        "name": "Game Mastering",
-        "name": "Escape Room Maintenance"
-
-        # Example
-
-        If the text contains:
-
-        "The Lost Treasure Difficulty ★ ★ ★ ★ ★ 3/5 Max 9 players 60 min Outsmart rivals, find the hidden objects and claim the ruby skull treasure within 60 minutes."
-
-        The JSON output should be:
-
-        ```json
-        [
-          {{
-            "name": "The Lost Treasure",
-            "description": "Outsmart rivals, find the hidden objects and claim the ruby skull treasure within 60 minutes.",
-            "duration": "60 min",
-            "difficulty": "3/5"
-          }}
-        ]
-        ```
-
-        # WARNING: DO NOT HALLUCINATE
-        If you're uncertain about any information, exclude it entirely. Never invent descriptions.
-        Only extract activities that are clearly actual escape room experiences.
-        If there's insufficient information to determine if something is an escape room activity, exclude it.
     """
+    print("Extracting activities with LLM...")
     response = ollama.chat(model='mistral:7b-instruct', messages=[{"role": "user", "content": prompt}])
     print("LLM extraction completed.")
 
@@ -125,6 +76,8 @@ def extract_with_llm(text):
                 pass
         print("Warning: Could not extract valid JSON from LLM response.")
         return []
+
+
 def initialize_output_file(output_file):
     """Initialize the output file with an empty JSON array."""
     with open(output_file, 'w', encoding='utf-8') as f:
@@ -154,30 +107,57 @@ def append_activity_to_file(activity, output_file, is_first=False):
 
 
 if __name__ == "__main__":
-    with open("raw_text.json", "r", encoding="utf-8") as f:
-        businesses = json.load(f)
+    # Load scraped data from the scraper output
+    try:
+        with open("scraped_data.json", "r", encoding="utf-8") as f:
+            scraped_data = json.load(f)
+            print(f"Loaded data for {len(scraped_data)} businesses from scraped_data.json")
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print(f"Error loading scraped_data.json: {str(e)}")
+        exit(1)
 
     output_file = "activities.json"
     initialize_output_file(output_file)
 
-    is_first_activity = True  # Initialize the flag
+    is_first_activity = True
+    total_activities = 0
 
-    for business in businesses:
-        if not business or "text" not in business:
-            continue  # Skip invalid or missing entries
+    # Process each business from the scraped data
+    for business in scraped_data:
+        business_name = business.get("name", "Unknown")
+        business_website = business.get("website", "No website")
+        pages = business.get("pages", [])
 
-        print(f"Processing business: {business.get('name', 'Unknown')}")
+        if not pages:
+            print(f"No pages found for {business_name} ({business_website})")
+            continue
 
-        chunks = chunk_text(business["text"])
+        print(f"Processing business: {business_name} - {len(pages)} pages")
 
-        for chunk in chunks:
-            activities = extract_with_llm(chunk)
-            for activity in activities:
-                activity["latitude"] = business.get("latitude")
-                activity["longitude"] = business.get("longitude")
+        # Process each page for this business
+        for page in pages:
+            page_content = page.get("content", "")
+            if len(page_content) < 100:
+                continue
 
-                # Add all activities without checking for duplicates
-                append_activity_to_file(activity, output_file, is_first_activity)
-                is_first_activity = False
-                print(f"Added activity: {activity.get('name', 'Unnamed activity')}")
-    print(f"Extraction complete. Results saved to {output_file}")
+            # Split content into manageable chunks
+            chunks = chunk_text(page_content)
+
+            for chunk in chunks:
+                activities = extract_with_llm(chunk)
+
+                for activity in activities:
+                    # Add business metadata to each activity
+                    activity["latitude"] = business.get("latitude")
+                    activity["longitude"] = business.get("longitude")
+
+                    # Note the source URL
+                    activity["source_url"] = page.get("url")
+
+                    # Add all activities without checking for duplicates
+                    append_activity_to_file(activity, output_file, is_first_activity)
+                    is_first_activity = False
+                    total_activities += 1
+                    print(f"Added activity: {activity.get('name', 'Unnamed activity')}")
+
+    print(f"Extraction complete. Added {total_activities} activities to {output_file}")

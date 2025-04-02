@@ -1,4 +1,5 @@
 import json
+import os
 from scrapy.crawler import CrawlerProcess
 from scrapy import Spider, Request, signals
 from scrapy.utils.project import get_project_settings
@@ -14,7 +15,7 @@ class BusinessSpider(Spider):
         self.max_depth = int(max_depth)
         self.visited_urls = set()
         self.business_data = business_data or {}
-        self.collected_text = ""
+        self.page_contents = []
 
     @classmethod
     def from_crawler(cls, crawler, *args, **kwargs):
@@ -29,7 +30,7 @@ class BusinessSpider(Spider):
 
         self.visited_urls.add(response.url)
 
-        # Extract content intelligently, similar to the original extract_content function
+        # Extract content intelligently
         main_content = response.xpath(
             '//*[self::main or self::article or self::section or self::div][contains(@class, "content") or contains(@class, "main") or contains(@class, "article") or contains(@class, "body")]')
 
@@ -37,7 +38,7 @@ class BusinessSpider(Spider):
             text = ' '.join(main_content.xpath('.//text()').getall())
             text = ' '.join(text.split())
             if len(text) > 200:
-                self.collected_text += " " + text
+                page_content = text
         else:
             # Fallback: get text from common content elements
             content_elements = response.xpath(
@@ -49,9 +50,16 @@ class BusinessSpider(Spider):
                 text = ' '.join(response.xpath('//body//text()').getall())
                 text = ' '.join(text.split())
 
-            self.collected_text += " " + text
+            page_content = text
 
-        print(f"Scraped {len(text)} characters from {response.url} (depth: {current_depth})")
+        # Store page content with its URL
+        if page_content and len(page_content) > 100:  # Only store pages with sufficient content
+            self.page_contents.append({
+                "url": response.url,
+                "content": page_content,
+                "depth": current_depth
+            })
+            print(f"Scraped {len(page_content)} characters from {response.url} (depth: {current_depth})")
 
         # Follow links if we haven't reached max depth
         if current_depth < self.max_depth:
@@ -68,7 +76,7 @@ class BusinessSpider(Spider):
                     if base_domain == link_domain and absolute_url not in self.visited_urls:
                         internal_links.append(absolute_url)
 
-            # Remove duplicates and limit links to avoid overwhelming the site
+            # Remove duplicates and limit links
             unique_links = list(set(internal_links))[:10]  # Follow max 10 links per page
 
             for link in unique_links:
@@ -80,17 +88,13 @@ class BusinessSpider(Spider):
                 )
 
     def spider_closed(self, spider):
-        """Called when spider closes - store the collected text."""
-        # Clean up the text
-        self.collected_text = self.collected_text.strip()
-
-        # Update the business data with the collected text
-        self.business_data["text"] = self.collected_text
-
-        # The item will be captured by the assigned spider_closed handler
+        """Called when spider closes - store the collected pages."""
+        # Update the business data with the collected pages
+        self.business_data["pages"] = self.page_contents
+        self.business_data["base_url"] = self.start_urls[0] if self.start_urls else None
 
 
-def scrape_with_scrapy(businesses, max_depth=6):
+def scrape_with_scrapy(businesses, max_depth=2, output_file="scraped_data.json"):
     """Scrape websites using Scrapy."""
     # Set up a list to collect results
     scraped_data = []
@@ -99,13 +103,15 @@ def scrape_with_scrapy(businesses, max_depth=6):
     settings = get_project_settings()
     settings.update({
         'ROBOTSTXT_OBEY': True,
-        'DOWNLOAD_DELAY': 1.5,  # Increase delay between requests
+        'DOWNLOAD_DELAY': 1.5,
         'COOKIES_ENABLED': False,
         'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
         'LOG_LEVEL': 'WARNING',
-        'DEPTH_PRIORITY': 1,  # Prioritize depth-first crawling
+        'DEPTH_PRIORITY': 1,
         'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue',
         'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue',
+        'DOWNLOAD_TIMEOUT': 15,
+        'RETRY_TIMES': 2
     })
 
     # Set up the Crawler Process
@@ -116,11 +122,11 @@ def scrape_with_scrapy(businesses, max_depth=6):
         website = business.get("website")
         if not website:
             print(f"No website found for {business.get('name', 'unknown business')}, skipping...")
-            # Add the business with empty text to maintain consistency
+            # Add the business with empty pages to maintain consistency
             scraped_data.append({
                 "name": business.get("name", ""),
-                "website": website,
-                "text": "",
+                "website": None,
+                "pages": [],
                 "latitude": business.get("latitude"),
                 "longitude": business.get("longitude")
             })
@@ -131,12 +137,11 @@ def scrape_with_scrapy(businesses, max_depth=6):
             business_data = {
                 "name": business.get("name", ""),
                 "website": website,
-                "text": "",
+                "pages": [],
                 "latitude": business.get("latitude"),
                 "longitude": business.get("longitude")
             }
 
-            # Simply use the process.crawl method directly - this is the key fix
             process.crawl(
                 BusinessSpider,
                 url=website,
@@ -154,7 +159,7 @@ def scrape_with_scrapy(businesses, max_depth=6):
             scraped_data.append({
                 "name": business.get("name", ""),
                 "website": website,
-                "text": "",
+                "pages": [],
                 "latitude": business.get("latitude"),
                 "longitude": business.get("longitude"),
                 "error": str(e)
@@ -162,26 +167,36 @@ def scrape_with_scrapy(businesses, max_depth=6):
 
     # Start the crawling process
     print("Starting the crawl process...")
-    process.start()  # This will only start if there are crawlers
+    process.start()
     print("Crawl process completed.")
+
+    # Save the scraped data
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(scraped_data, f, ensure_ascii=False, indent=2)
+
+    print(f"Scraped data for {len(scraped_data)} businesses and saved to {output_file}")
 
     return scraped_data
 
+
 if __name__ == "__main__":
-    # Get crawl depth from user
-    max_depth = input("Enter max crawl depth (default is 2): ")
-    max_depth = int(max_depth) if max_depth else 2
+    places_file = "places.json"
 
-    # Load businesses from file
-    with open("places.json", "r") as f:
-        businesses = json.load(f)
+    if not os.path.exists(places_file):
+        print(f"Error: {places_file} not found. Please run find_places.py first.")
+        exit(1)
 
-    # Scrape websites using Scrapy
-    scraped_data = scrape_with_scrapy(businesses, max_depth)
+    try:
+        with open(places_file, "r", encoding="utf-8") as f:
+            businesses = json.load(f)
+            print(f"Loaded {len(businesses)} businesses from {places_file}")
+    except (json.JSONDecodeError, UnicodeDecodeError) as e:
+        print(f"Error loading {places_file}: {str(e)}")
+        exit(1)
 
-    # Save results to JSON file
-    with open("raw_text.json", "w", encoding="utf-8") as f:
-        json.dump(scraped_data, f, ensure_ascii=False, indent=2)
+    # Filter out businesses without websites
+    businesses_with_websites = [b for b in businesses if "website" in b and b["website"]]
+    print(f"Found {len(businesses_with_websites)} businesses with websites")
 
-    print(f"Scraping complete. Processed {len(scraped_data)} businesses.")
-    print(f"Results saved to raw_text.json")
+    # Run the scraper
+    scraped_data = scrape_with_scrapy(businesses_with_websites, max_depth=2)
