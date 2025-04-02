@@ -43,6 +43,7 @@ def extract_with_llm(text):
     - description: Brief description of what participants actually do
     - duration: Time required (if mentioned)
     - difficulty: Difficulty level (if mentioned)
+    - price: Price (if mentioned)
 
     Return a valid JSON array with this format:
     [
@@ -51,6 +52,7 @@ def extract_with_llm(text):
         "description": "What participants actually do during this activity",
         "duration": "Duration if specified",
         "difficulty": "Difficulty if specified"
+        "price": "Price if specified"
       }}
     ]
 

@@ -90,4 +90,4 @@ if __name__ == "__main__":
     api_key = "AIzaSyDfq7YrYVk_M6NnLNeJd5QQOKYyQlhFTFI"
     location = "43.6532,-79.3832"  # Example: toronto
     keyword = input("Enter activity to search for (e.g., archery, escape room): ")
-    get_places(api_key, location, keyword, 20000)
+    get_places(api_key, location, keyword, 15000)
