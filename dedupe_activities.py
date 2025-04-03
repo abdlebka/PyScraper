@@ -1,117 +1,123 @@
 import json
+import difflib
 from collections import defaultdict
-from difflib import SequenceMatcher
 
 
-def load_activities(file_path):
+def load_json_data(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
-        return json.load(f)
+        data = json.load(f)
+    return data
 
 
-def save_activities(activities, file_path):
+def save_json_data(data, file_path):
     with open(file_path, 'w', encoding='utf-8') as f:
-        json.dump(activities, f, ensure_ascii=False, indent=2)
+        json.dump(data, f, indent=2)
 
 
-def text_similarity(a, b):
-    """Calculate text similarity ratio between two strings."""
-    if not a or not b:
+def compute_similarity(str1, str2):
+    if not str1 or not str2:
         return 0
-    return SequenceMatcher(None, a, b).ratio()
+    return difflib.SequenceMatcher(None, str1, str2).ratio()
 
 
-def deduplicate_activities(activities):
-    # First pass - group by name
-    activities_by_name = defaultdict(list)
-    for activity in activities:
-        if "name" in activity and activity["name"]:
-            # Skip entries with placeholder names
-            if any(placeholder in activity["name"].lower() for placeholder in
-                   ["extract missing info", "unknown activity", "not provided"]):
+def is_similar(item1, item2, name_threshold=0.8, desc_threshold=0.7):
+    name_similarity = compute_similarity(item1.get('name', ''), item2.get('name', ''))
+    desc_similarity = compute_similarity(item1.get('description', ''), item2.get('description', ''))
+
+    # Higher weight on name similarity
+    if name_similarity > name_threshold:
+        return True
+    # If names are somewhat similar, check descriptions
+    elif name_similarity > 0.6 and desc_similarity > desc_threshold:
+        return True
+    return False
+
+
+def merge_items(items):
+    # Start with the item that has the most fields filled
+    items.sort(key=lambda x: sum(1 for v in x.values() if v is not None and v != ''), reverse=True)
+
+    merged = {}
+    sources = set()
+
+    # Merge all items
+    for item in items:
+        for key, value in item.items():
+            if key == 'source_url':
+                if value:
+                    sources.add(value)
+            elif key not in merged or merged[key] is None or merged[key] == '':
+                merged[key] = value
+
+    # Add all source URLs
+    merged['source_urls'] = list(sources)
+    if 'source_url' in merged:
+        del merged['source_url']
+
+    return merged
+
+
+def deduplicate_activities(data):
+    # Group potentially similar items
+    name_groups = defaultdict(list)
+    for item in data:
+        if 'name' in item and item['name']:
+            key = item['name'].lower().split()[0]  # Group by first word of name
+            name_groups[key].append(item)
+
+    # Process each group to find and merge similar items
+    merged_items = []
+    processed_indices = set()
+
+    for key, group in name_groups.items():
+        for i, item1 in enumerate(group):
+            if i in processed_indices:
                 continue
-            activities_by_name[activity["name"]].append(activity)
 
-    # Second pass - identify similar descriptions and merge groups
-    merged_groups = []
-    processed_names = set()
+            similar_items = [item1]
+            processed_indices.add(i)
 
-    for name, variants in activities_by_name.items():
-        if name in processed_names:
-            continue
+            for j, item2 in enumerate(group):
+                if j != i and j not in processed_indices and is_similar(item1, item2):
+                    similar_items.append(item2)
+                    processed_indices.add(j)
 
-        # Create a new group starting with this activity
-        similar_group = variants
-        processed_names.add(name)
+            merged_items.append(merge_items(similar_items))
 
-        # Find other activities with similar descriptions
-        for other_name, other_variants in activities_by_name.items():
-            if other_name in processed_names or name == other_name:
-                continue
+    # Add any remaining items that weren't processed
+    for item in data:
+        found = False
+        for group_items in name_groups.values():
+            for i, group_item in enumerate(group_items):
+                if i in processed_indices and group_item == item:
+                    found = True
+                    break
+            if found:
+                break
 
-            # Check similarity between descriptions
-            desc1 = next((v.get("description") for v in variants if v.get("description")), "")
-            desc2 = next((v.get("description") for v in other_variants if v.get("description")), "")
+        if not found:
+            item_copy = item.copy()
+            if 'source_url' in item_copy:
+                item_copy['source_urls'] = [item_copy.pop('source_url')]
+            merged_items.append(item_copy)
 
-            if desc1 and desc2 and text_similarity(desc1, desc2) > 0.65:  # 85% similarity threshold
-                similar_group.extend(other_variants)
-                processed_names.add(other_name)
-
-        merged_groups.append(similar_group)
-
-    # Create final deduplication results
-    deduplicated = []
-    for group in merged_groups:
-        # Use the most common name in the group
-        name_counts = defaultdict(int)
-        for item in group:
-            name_counts[item["name"]] += 1
-        best_name = max(name_counts.items(), key=lambda x: x[1])[0]
-
-        merged = {
-            "name": best_name,
-            "latitude": group[0].get("latitude"),
-            "longitude": group[0].get("longitude")
-        }
-
-        # Find the longest/most complete description
-        descriptions = [v.get("description") for v in group if v.get("description")]
-        if descriptions:
-            merged["description"] = max(descriptions, key=lambda x: len(x) if x else 0)
-
-        # Get most specific duration
-        durations = [v.get("duration") for v in group if v.get("duration")]
-        if durations:
-            merged["duration"] = max(durations, key=lambda x: len(x) if x else 0)
-
-        # Get the most detailed difficulty rating
-        difficulties = [v.get("difficulty") for v in group if v.get("difficulty")]
-        if difficulties:
-            merged["difficulty"] = max(difficulties, key=lambda x: len(str(x)) if x else 0)
-
-        # Get the most detailed location information
-        locations = [v.get("location") for v in group if v.get("location")]
-        if locations:
-            merged["location"] = max(locations, key=lambda x: len(x) if x else 0)
-
-        # Get price information if available
-        prices = [v.get("price") for v in group if v.get("price")]
-        if prices:
-            merged["price"] = max(prices, key=lambda x: len(x) if x else 0)
-
-        deduplicated.append(merged)
-
-    return deduplicated
+    return merged_items
 
 
 def main():
-    activities = load_activities("activities.json")
-    print(f"Loaded {len(activities)} activities")
+    try:
+        # Load the data
+        data = load_json_data('activities.json')
 
-    deduplicated = deduplicate_activities(activities)
-    print(f"Deduplicated to {len(deduplicated)} activities")
+        # Deduplicate activities
+        deduplicated_data = deduplicate_activities(data)
 
-    save_activities(deduplicated, "deduplicated_activities.json")
-    print(f"Saved deduplicated activities to deduplicated_activities.json")
+        # Save deduplicated data
+        save_json_data(deduplicated_data, 'deduplicated_activities.json')
+
+        print(f"Successfully deduplicated {len(data)} activities into {len(deduplicated_data)} unique activities.")
+    except Exception as e:
+        print(f"Error processing data: {e}")
 
 
 if __name__ == "__main__":

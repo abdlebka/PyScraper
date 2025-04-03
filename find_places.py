@@ -1,8 +1,10 @@
 import requests
 import json
 import time
+import os
+from dotenv import load_dotenv
 
-
+load_dotenv()
 def get_place_details(api_key, place_id):
     """Gets detailed information for a place using Google Place Details API."""
     url = "https://maps.googleapis.com/maps/api/place/details/json"
@@ -87,7 +89,7 @@ def get_places(api_key, location, keyword, radius=10000, max_results=200):
 
 
 if __name__ == "__main__":
-    api_key = "some key" # Replace with your actual API key
+    api_key = os.getenv("PLACE_API_KEY") # Replace with your actual API key
     location = "43.6532,-79.3832"  # Example: toronto
     keyword = input("Enter activity to search for (e.g., archery, escape room): ")
-    get_places(api_key, location, keyword, 15000)
+    get_places(api_key, location, keyword, 10000)

@@ -1,593 +1,1669 @@
 [
   {
-    "name": "60 Mins",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "#Hacker, #SciFi, #Infiltration, #BeginnerFriendly, #HighTech",
-    "duration": "60 Mins",
-    "difficulty": "2/5"
-  },
-  {
-    "name": "Z Express",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "#Thriller, #LiveActor, #TrainEscape, #Zombie, #90mins",
-    "duration": "90 Mins",
-    "difficulty": "3/5"
-  },
-  {
-    "name": "Defend the Magic Academy",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "As new mages, you will embark on an adventure, mastering lessons along the way to acquire the abilities necessary to aid your academy in reclaiming a powerful relic known as the Stone of Wisdom. Once discovered and properly placed, the Stone of Wisdom will restore the protective force field around the school, securing the future of the academy once and for all.",
-    "duration": "90 minutes",
-    "difficulty": "3/5",
-    "location": "1187 Kennedy Rd, Scarborough"
-  },
-  {
-    "name": "The Red Admiral",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "#Infiltration, #Spy, #ColdWar, #HighTech, #HighDifficulty",
-    "duration": "60 Mins",
-    "difficulty": "4/5"
-  },
-  {
-    "name": "Virus Outbreak: The Final Hour",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "#SaveTheWorld, #AgainstTheClock, #SecretLab, #Antidote",
-    "duration": "60 Mins",
-    "difficulty": "3/5"
-  },
-  {
-    "name": "Shadows in the Dark",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "#Mystery, #Suspense, #Detective"
-  },
-  {
-    "name": "Wild West Showdown",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "It's a simple time with two straightforward rules: everything can be bought with enough gold, and don't get shot. It's a barren land where the undertaker is the busiest person in town, and next is the sheriff. A group of strangers arrives in town by coach—what will await them? Fame and glory, or death and destruction?",
-    "duration": "120 minutes",
-    "difficulty": "4/5",
-    "location": "#7 7501 Woodbine Ave, Markham"
-  },
-  {
-    "name": "Once Upon a Time",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Beast or beauty, wicked or charming, all your favourite fairy tale characters have been invited. Gather all the guests to ensure the party is a success.",
+    "name": "JUNGLE SAFARI",
+    "description": "Embark on an immersive adventure with your chosen group, whether it\u2019s a small gathering, or a larger team. Our escape rooms are family-friendly and fun for everyone. Are you ready for an adventure? All rooms have color based puzzles.",
     "duration": "60 minutes",
-    "difficulty": "2/5",
-    "location": "#7 7501 Woodbine Ave, Markham"
-  },
-  {
-    "name": "Escape Room Experience",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Solve puzzles, find clues, and escape the room within 60 minutes. No electronic devices are allowed and lockers are provided to store your phones and belongings before you go in the room. We only give full refunds for cancellations made 24 hours prior to your booking time. Any last-minute cancellations within 24 hours will not be refunded. There are many non-scary rooms available, including Godfather, Jungle Safari, The lost treasure, Magic School, Fairy Tale, and Bomb Squad.",
-    "duration": "60 minutes",
-    "location": "In Downtown Toronto\n130 Dundas Street West, 3rd Floor\nToronto, Ontario, M5G 1C3"
-  },
-  {
-    "name": "Game Master (Full-time/Part-time)",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Responsibilities: Welcome all customers warmly upon arrival and provide efficient check-in service. Offer recommendations, explain rules, and provide assistance as necessary. Process payments accurately and responsibly. Familiarize guests with escape room rules, themes, and background stories. Monitor game room progress and offer hints when needed. Assist with operations at the bubble tea bar when required. Perform as the NPC in two of our escape rooms when required. Maintain the cleanliness and tidiness of the lobby, board game lounge, escape rooms, washrooms, and other facility areas.",
-    "location": {
-      "Markham": null,
-      "Scarborough": null
-    }
-  },
-  {
-    "name": "Bubble Tea Barista (Full-time/Part-time)",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Responsibilities: Welcome and greet customers with warmth and hospitality as they arrive. Craft and serve a variety of delicious bubble tea drinks with precision and flair. Provide recommendations and assistance to customers in selecting bubble tea drinks.",
-    "location": {
-      "Markham": "Markham location",
-      "Scarborough": null
-    }
-  },
-  {
-    "name": "Character Embodiment",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Bring the Wild West to life by fully embodying the character of a rough and sarcastic bartender with an authentic Western accent. Immerse customers in a captivating storyline through engaging interactions, ensuring an unforgettable and immersive experience.",
-    "location": "Markham location"
-  },
-  {
-    "name": "Dynamic Improv and Ad-Libbing",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Showcase your talent for dynamic improv and ad-libbing to respond to the unpredictability of each customer group. Enhance the overall experience with quick thinking on the spot, creating memorable and personalized moments for every escape room team.",
-    "location": "Markham location"
-  },
-  {
-    "name": "Customer Interaction",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Interact with customers in a manner that enhances their immersion, creating an atmosphere that feels like stepping into a Western tale. Ensure customers leave with stories to tell, having experienced the charm and wit of your character throughout their escape room adventure.",
-    "location": "Markham location"
-  },
-  {
-    "name": "Game Master",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Train as a Game Master to guide and enhance the escape room experience for groups, adding an extra layer of excitement to their journey. Contribute to the overall adventure by assisting teams in overcoming puzzles and celebrating their victories.",
-    "location": "Markham location"
-  },
-  {
-    "name": "Behind-the-Scenes Support",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Learn the intricacies of escape room maintenance, contributing to the seamless operation of our immersive environments. Take on the responsibility of ensuring each escape room is cleaned and reset to perfection, ready for the next group of adventurers.",
-    "location": "Markham location"
-  },
-  {
-    "name": "Customer Service",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Assist in reception duties, including processing payments and offering hints to groups when needed. Elevate the customer experience by seamlessly transitioning between your immersive character role and practical tasks that keep the escape room business running smoothly.",
-    "location": "Markham location"
-  },
-  {
-    "name": "Quick Memorization",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Exhibit strong memorization skills to seamlessly deliver lines and maintain character consistency throughout the entire escape room experience. Adapt to unexpected scenarios, ensuring a fluid and authentic performance that adds an extra layer of excitement to the escape room narrative.",
-    "location": "7501 Woodbine Ave Markham, ON L3R 2W1\n(905) 695 9556\ninfo@omventure.ca"
-  },
-  {
-    "name": "Immersive Storytelling",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Contribute to the creation of an immersive escape room narrative by infusing your character with depth, authenticity, and a touch of humour. Collaborate with the game development team to ensure a seamless integration of your character into the overall storyline. Previous experience in the theatre or film industry is preferred but not mandatory."
-  },
-  {
-    "name": "Corporate Team Building Event",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Experience a unique and engaging team-building event at Omventure, Ontario's largest escape room facility. The spacious and fully equipped location can accommodate up to 100 people and offers various services such as outside catering, hosts, presentations, and customizable experiences for marketing events, networking sessions, award shows, and holiday parties.",
-    "location": "7501 Woodbine Ave Markham, ON L3R 2W1\n(905) 695 9556\ninfo@omventure.ca"
-  },
-  {
-    "name": "#Thriller",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "The train ride to Geumdo Island was meant to be a routine beginning—a new role with Barrier Corp, a cutting-edge pharmaceutical giant in South Korea. But from the moment you stepped onto the train, something felt wrong. Unsettling noises, missing crew members, and restricted areas are only the beginning. Now, you’re stranded in a facility shrouded in secrets, where every turn brings new dangers. What began as a promising career move has spiralled into a struggle for survival. Can you outsmart the shadows of Geumdo Island and escape with your life, or will its hidden horrors trap you forever? WARNING: This experience is for people 16 and older only. It involves confined spaces, loud sounds, and bright flashing lights, which may not be suitable for individuals with claustrophobia, photosensitivity, epilepsy, pregnancy, heart disease, or other serious medical conditions. Omventure Canada reserves the right to deny entry to anyone under 16.",
-    "duration": "90 minutes",
-    "difficulty": "3/5",
-    "location": "1187 Kennedy Rd, Scarborough"
-  },
-  {
-    "name": "#Dark Altar",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "An archeology fanatic is the head of the mysterious and spooky Copenheimer Museum, where he hopes to use a dark ritual to give himself eternal, Godly power.",
-    "duration": "60 minutes",
-    "difficulty": "4/5",
-    "location": "#7 7501 Woodbine Ave, Markham"
-  },
-  {
-    "name": "Entering the museum and stopping the ritual",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Those who enter the museum must face the dark power and stop the ritual before it’s too late.",
-    "location": "7501 Woodbine Ave Markham, ON L3R 2W1\n1187 Kennedy Rd Scarborough, ON M1P 2L2"
-  },
-  {
-    "name": "BOOK NOW TORONTO'S PREMIUM ESCAPE GAMES & IMMERSIVE ADVENTURES ESCAPE ROOMS x BOARD GAME CAFE",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "duration": "60 Mins",
-    "difficulty": "2/5",
-    "location": "Scarborough Games, 1187 Kennedy Rd (647) 800 8038"
-  },
-  {
-    "name": "Scarborough Games Shut Down",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "duration": "60 Mins",
-    "difficulty": "2/5",
-    "location": "Scarborough Games, 1187 Kennedy Rd (647) 800 8038"
-  },
-  {
-    "name": "#Hacker, #SciFi, #Infiltration, #BeginnerFriendly, #HighTech Z Express",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "duration": "90 Mins",
-    "difficulty": "3/5"
-  },
-  {
-    "name": "#Thriller, #LiveActor, #TrainEscape, #Zombie, #90mins Defend the Magic Academy",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "duration": "90 Mins",
-    "difficulty": "3/5"
-  },
-  {
-    "name": "#Adventure, #Fantasy, #SpellCast, #Battle, #90mins The Magic Academy",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "duration": "90 Mins",
-    "difficulty": "3/5"
-  },
-  {
-    "name": "#Puzzle, #Action, #The Lost Expedition",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "duration": "60 Mins",
-    "difficulty": "4/5"
-  },
-  {
-    "name": "#Dungeon, #Escape, #Dragon's Den",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "duration": "60 Mins",
-    "difficulty": "4/5"
-  },
-  {
-    "name": "#Mystery, #The Lost Temple",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "duration": "60 Mins",
-    "difficulty": "5/5"
-  },
-  {
-    "name": "Nyctophobia: Fear of the dark",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Book Now #Haunted, #PitchDark, #Horror, #Exploration, #18+\nCan you find all the secrets hidden in the shadows before time runs out? Or do you suffer from Nyctophobia? NYCTOPHOBIA WARNING: 18+ only. Nyctophobia contains violent content, loud noises and extremely low visibility. It is not recommended for those who suffer from heart conditions, seizures or other serious medical conditions. This experience is not suitable for children or pregnant women.\n\nFor your safety, Omventure Canada reserves the right to deny entry to pregnant women and anyone under 18.\nPlease be aware that this escape room incorporates themes related to séances and occults, which could be sensitive to certain religious beliefs.",
-    "duration": "60 minutes",
-    "difficulty": "???",
-    "location": "1187 Kennedy Rd, Scarborough"
-  },
-  {
-    "name": "Shut Down",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Book Now #Hacker, #SciFi, #Infiltration, #BeginnerFriendly, #HighTech\nIn the year 2076, the Frost Corp dominated the world. They had used the \"Frost Queen\" system to infiltrate every pixel, claiming it was for freedom and protection. However, their unethical sale of personal data has sparked outrage and also rebellion.",
-    "duration": "60 minutes",
-    "difficulty": "2/5",
-    "location": "1187 Kennedy Rd, Scarborough"
-  },
-  {
-    "name": "Escape rooms challenge",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Escape rooms challenge you mentally, encourage imagination, and create memorable moments. That’s why it’s one of the most popular venues to host birthday parties! Omventure Canada is one of the top premium escape room businesses in the GTA. We provide high-tech interactive puzzles, engaging storylines, and vivid aesthetics - all to ensure an immersive and unforgettable experience. All of our birthday party packages come with a mission in an escape room of your choice, pizza, drinks, and time to play board games!",
-    "location": [
-      {
-        "name": "mARKHAM Location #7 - 7501 Woodbine Ave Markham, ON L3R 2W1",
-        "email": "info@omventure.ca",
-        "phone": "(905) 695 9556"
-      },
-      {
-        "name": "SCARBORoUGH Location Upper - 1187 Kennedy Rd Scarborough, ON M1P 2L2",
-        "email": "info@omventure.ca",
-        "phone": "(647) 800 8038"
-      }
+    "difficulty": "\u2605 \u2605 \u2605 \u2605 \u2605 5/5",
+    "max_players": "Max 9 players",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "source_urls": [
+      "https://www.enigmaroom.ca/"
     ]
   },
   {
-    "name": "Robotcalypse",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "#Robots, #Exploration, #SciFi, #Battle, #90mins, #TeamWork #SpaceTravel Take a futuristic journey aboard a spaceship! Unfortunately, it’s not all smooth sailing. Forced to make an emergency landing, you and your crew find yourselves on a distant planet populated entirely by robots! All you want is to repair your spaceship and be on your way, but that won’t be easy so long as the evil robot Zybar rules.",
-    "duration": "#90mins",
-    "location": "7501 Woodbine Ave, Markham"
-  },
-  {
-    "name": "The Kingdom of Cats",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "You have been invited to a tea party by the Queen, as you are the greatest detectives in the human world. Will you be able to find the King and save the Cat Kingdom from falling into chaos?",
-    "duration": "60 minutes",
-    "difficulty": "3/5",
-    "location": "7501 Woodbine Ave, Markham"
-  },
-  {
-    "name": "#Investigation, #HighTech, #SciFi, #Mystery, #BeginnerFriendly",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Now you, a special investigation unit, have been called to enter Dennis Christopher's study room in search for clues. mARKHAM Location #7 - 7501 Woodbine Ave Markham, ON L3R 2W1.",
-    "duration": "60 minutes",
-    "difficulty": "3/5",
-    "location": "7501 Woodbine Ave, Markham"
-  },
-  {
-    "name": "#Haunted, #Horror, #16+, #120mins, #liveActor, #FearFilledEscape",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Your group makes your way inside Motel Betty, only to find an empty front desk with a keycard that reads '011.' Tired and not wanting to look for somewhere else to spend the night, you grab the keycard and head through the dark corridor. Little do you know, this will be a night filled with horror and insanity.",
-    "duration": "120 minutes",
-    "location": "7501 Woodbine Ave, Markham"
-  },
-  {
-    "name": "SINISTER CIRCUS: The Joker's Legacy",
-    "latitude": 43.7541119,
-    "longitude": -79.276337,
-    "description": "Entertain the Joker by solving his riddles, don’t let his mind grow idle or he’ll take his anger out on you! Can you survive a descent into the Joker’s world of madness and murder?",
-    "duration": "75 minutes",
-    "difficulty": "5/5",
-    "location": "7501 Woodbine Ave, Markham"
-  },
-  {
-    "name": "Booking an Escape Room",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "Book your room and contact us to see how we can help make any special occasion even better. Just click the ‘Book Now’ button, and it will direct you to the booking page. Feel free to pay now or pay later. You can add more people after booking. Simply let our staff know when you walk in. We’ll adjust the booking for you."
-  },
-  {
-    "name": "Rules and Regulations",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "All ages can enjoy our games. Players 12 years or younger must be accompanied by at least 1 adult that is at least 18 years old. A waiver must be signed by a parent or guardian. No electronic devices are allowed in our rooms. Lockers are provided to store your phones and your belongings before you go in the room. Any cancellation fees? We only give full refunds for cancellations made 24 hours prior to your booking time. We can not give a refund for any last-minute cancellations within 24 hours. "
-  },
-  {
-    "name": "Room Selection",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "If you are not a fan of horror, we have many non-scary rooms including Godfather, Jungle, Pirate, Magic School, Fairy Tale, and Bomb Disposal."
-  },
-  {
-    "name": "Game Availability",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "We never put strangers in your room. It’ll be only your team members playing with you in the room."
-  },
-  {
     "name": "Jungle Safari",
+    "description": "Discover diverse adventures in our escape rooms. With multiple themed spaces and exciting puzzles, it\u2019s perfect for group fun, team building and birthday parties!",
+    "duration": "60 minutes",
+    "difficulty": "\u2605 \u2605 \u2605 \u2605 \u2605 5/5",
+    "max_players": "9",
     "latitude": 43.655663,
     "longitude": -79.3846061,
-    "description": "Embark on an immersive adventure with your chosen group, whether it’s a small gathering, or a larger team. Our escape rooms are family-friendly and fun for everyone. All rooms have color based puzzles. TRADITIONAL ROOMS Discover diverse adventures in our escape rooms. With multiple themed spaces and exciting puzzles, it’s perfect for group fun, team buildng and birthday parties! Jungle Safari Difficulty ★ ★ ★ ★ ★ 5/5 Max 9 players 60 min",
-    "duration": "Not specified",
-    "difficulty": "Max 9 Players",
+    "price": "$36 + tax per person",
     "location": "130 Dundas Street West, 3rd Floor Toronto, Ontario, M5G 1C3",
-    "price": "$36 + tax per person family friendly"
+    "source_urls": [
+      "https://www.enigmaroom.ca/portfolio/",
+      "https://www.enigmaroom.ca/godfather/",
+      "https://www.enigmaroom.ca/pirate/",
+      "https://www.enigmaroom.ca/fright-night/",
+      "https://www.enigmaroom.ca/fairy-tale/",
+      "https://www.enigmaroom.ca/exorcist/",
+      "https://www.enigmaroom.ca/corporate/",
+      "https://www.enigmaroom.ca/privacy-policy/",
+      "https://www.enigmaroom.ca/jungle/",
+      "https://www.enigmaroom.ca/"
+    ]
+  },
+  {
+    "name": "Jungle",
+    "description": "A non-scary escape room set in a jungle theme.",
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "source_urls": [
+      "https://www.enigmaroom.ca/"
+    ]
   },
   {
     "name": "The Lost Treasure",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape within 60 minutes. In this adventure, you'll have to outsmart rivals, find the hidden objects, and claim the ruby skull treasure within 60 minutes.",
+    "description": "Find clues and solve puzzles to uncover hidden treasures in this adventure-filled escape room.",
     "duration": "60 minutes",
-    "difficulty": "Not explicitly mentioned",
-    "location": "130 Dundas Street West, Toronto, Ontario, M5G 1C3",
-    "price": "$45 (implied from 'You might also like these Escape Rooms')"
-  },
-  {
-    "name": "GODfather",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "Are you ready for an adventure? All rooms have color based puzzles. TRADITIONAL ROOMS Discover diverse adventures in our escape rooms. With multiple themed spaces and exciting puzzles, it’s perfect for group fun, team buildng and birthday parties! GODfather Difficulty ★ ★ ★ ★ ★ 4/5 Max 9 players 60 min",
-    "duration": "60 minutes",
-    "difficulty": "4/5"
-  },
-  {
-    "name": "Hannibal",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "Difficulty ★ ★ ★ ★ ★ 5/5 Horror 2-9 players 60 min There is a killer psychopath on the loose, chopping up victims every day. Protests across the country demand immediate action from government. You and your team of FBI agents have been tasked to bring down the killer psychopath. The case gets political when the killer kidnaps the senator’s daughter and threatens to kill her. You are running out of time, so you decide to visit the infamous Hannibal to ask him for a lead. But when your team enters the prison, you find that everyone is gone. The security system was triggered and the emergency light is on. The door locks shut behind you. Someone is lurking in the shadows.",
-    "duration": "60 minutes",
-    "difficulty": "⭐⭐⭐⭐⭐",
-    "location": "130 Dundas Street West, Toronto",
-    "price": "$36 + tax per person family friendly"
-  },
-  {
-    "name": "GODfATHER",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "Brave our scary room – spine-chilling challenges for thrillseekers and horror enthusiasts. With a difficulty level of ★ ★ ★ ★ ★ 4/5, this room can accommodate up to 9 players for a duration of 60 minutes.",
-    "duration": "60 minutes",
-    "difficulty": "★ ★ ★ ★ 4/5"
-  },
-  {
-    "name": "Corporate Events",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "Unlock Success Together: Elevate Team Bonding with Our Escape Room! Choose Us for Unforgettable Team Building Adventures, Where Puzzles Forge Stronger Connections and Collaboration Prevails. Dare to Challenge, Unite to Triumph!",
-    "location": "130 Dundas Street West, Toronto"
-  },
-  {
-    "name": "Birthday Parties",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "Our escape rooms are made for all ages. There are no special skills needed to have a great time. Bring your friends, family, co-workers, field trip classmates and have fun."
-  },
-  {
-    "name": "Special Events & Group Activities",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "Whatever the celebration Enigma is here to take it to another level. Book your room and contact us to see how we can help make any special occasion even better."
-  },
-  {
-    "name": "Escape Games",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape and/or find the missing item within a set amount of time. You must solve the escape room in 60 minutes or less.",
-    "duration": "60 minutes"
-  },
-  {
-    "name": "HAUNTED TOYSTORE",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "Experience horrifying challenges in this escape room. With a difficulty level of ★ ★ ★ ★ ★ 5/5, this room can accommodate up to 9 players for a duration of 60 minutes.",
-    "duration": "60 minutes",
-    "difficulty": "★ ★ ★ ★ 3/5"
-  },
-  {
-    "name": "EXTRACT_MISSING_ROOM_NAME",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "This escape room is not provided with a name or description."
-  },
-  {
-    "name": "JUNGLE SAFARI",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "With multiple themed spaces and exciting puzzles, it’s perfect for group fun, team building and birthday parties!",
-    "duration": "60 min",
-    "difficulty": "5/5"
-  },
-  {
-    "name": "EXORCIST",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "Can you outsmart the devil? Solve puzzles and defeat the Exorcist within 60 minutes.",
-    "duration": "60 min",
-    "difficulty": "4/5"
-  },
-  {
-    "name": "ESCAPE CUBES",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "Dive into an exhilarating adventure in our specially designed escape room – a single space filled with exciting puzzles for the best minds! (Bomb squad Difficulty ★ ★ ★ ★ ★ 5/5 Max 3 players 60 min)",
-    "duration": "60 min",
-    "difficulty": "5/5"
-  },
-  {
-    "name": "Fairytale",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "Enter a whimsical world and help the fairytale characters overcome their obstacles. (Price: $45)",
-    "duration": "60 min",
-    "difficulty": "2/5"
-  },
-  {
-    "name": "Mystery Mansion",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "Unravel the secrets of the Mystery Mansion! (Location: 123 Main Street, Anytown USA)",
-    "duration": "60 min",
-    "difficulty": "4/5"
-  },
-  {
-    "name": "FAIRYTALE",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "duration": "60 min"
-  },
-  {
-    "name": "MAGIC SCHOOL",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "duration": "60 min"
-  },
-  {
-    "name": "Corporate Event at Enigma Room",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "Conveniently located at 130 Dundas St West, Toronto (next to Toronto Metropolitan University). Past clients include Google, Apple, Uber, Microsoft, Coca-Cola, Pepsi, Cineplex, RBC and more. To book your next corporate event, please call 647 859 1143"
-  },
-  {
-    "name": "Godfather Escape Room",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "A non-scary escape game with the theme of fairy tales. Players will need to use elements of the room, their collective knowledge, and wits to discover clues, solve puzzles, and find their way out of the enchanted forest within a set amount of time.",
-    "duration": "60 minutes"
-  },
-  {
-    "name": "Magic School",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "Welcome to the Magic School where 4 faculties compete for the magic goblet. To be admitted to Magic School, you must pass an entrance exam and prove that you belong among the wizardkind. If you fail to complete all tasks in 60 minutes, you will have to go back to the ordinary Muggle world – and you won’t remember a thing! $36 + tax per person family friendly Book Now Previous image Next image",
-    "duration": "Not specified",
-    "difficulty": "★ ★ ★ ★ ★ 5/5",
-    "location": "Downtown Toronto 🍁 130 Dundas Street West, 3rd Floor Toronto, Ontario, M5G 1C3"
-  },
-  {
-    "name": "Haunted Toy Store",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "Difficulty: ⭐⭐⭐⭐ Max 9 Players The Exorcist Difficulty: ⭐⭐⭐⭐ Max 9 Players Jungle Safari Difficulty: ⭐⭐⭐⭐ Max 9 Players The Lost Treasure Difficulty: ⭐⭐⭐ Max 9 Players Fairytales Difficulty: ⭐⭐⭐⭐ Max 7 Players Magic School Difficulty: ⭐⭐⭐⭐⭐ Max 7 Players Bomb Squad Difficulty: ⭐⭐⭐⭐ Max 3 Players Godfather Difficulty: ⭐⭐⭐⭐⭐ Max 9 Players Hannibal Difficulty: ⭐⭐⭐⭐⭐ Max 9 Players",
-    "duration": "60 minutes",
-    "difficulty": "⭐⭐⭐⭐ Max 9 Players",
-    "location": "130 Dundas Street West, Toronto, Ontario, M5G 1C3",
-    "price": "$36 + tax per person family friendly"
+    "difficulty": "Medium",
+    "location": "San Francisco",
+    "latitude": 43.654687,
+    "longitude": -79.3798559,
+    "max_players": 9,
+    "price": "$30 per person",
+    "source_urls": [
+      "https://www.enigmaroom.ca/portfolio/",
+      "https://www.vrcade.ca/menu",
+      "https://www.enigmaroom.ca/fright-night/",
+      "https://www.vrcade.ca/events",
+      "https://www.adventurecitygames.com/en/toronto/games-list/",
+      "https://www.enigmaroom.ca/exorcist/",
+      "https://www.enigmaroom.ca/corporate/",
+      "https://www.vrcade.ca/",
+      "https://www.enigmaroom.ca/privacy-policy/",
+      "https://www.inblackescape.com/booking",
+      "https://www.vrcade.ca/pixel-hack",
+      "https://www.escapetheship.com/faq",
+      "https://www.enigmaroom.ca/godfather/"
+    ]
   },
   {
     "name": "The Exorcist",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
     "description": "News has spread of a small child trapped in an old, mysterious house. Evil is lurking in every corner. You hear a cry for help, so you and your friends run in to save the child, but you notice something is not right with this house. You hear strange noises. You are not alone. Something dark is lurking in the shadows. Will you save the child in time? This room has puzzles feature color elements, is a dark room.",
+    "duration": "60 min",
+    "difficulty": "\u2605 \u2605 \u2605 \u2605 \u2605 4/5 Horror",
+    "min_players": 2,
+    "max_players": 9,
+    "latitude": 43.655663,
+    "longitude": -79.3846061,
+    "price": "$36 + tax per person",
+    "source_urls": [
+      "https://www.enigmaroom.ca/fright-night/",
+      "https://www.enigmaroom.ca/godfather/",
+      "https://www.enigmaroom.ca/exorcist/"
+    ]
+  },
+  {
+    "name": "The Godfather",
+    "description": "You are a member of the Corleone mafia family \u2013 one of the most powerful families in the Big Apple until now. Dark times have come to the Corleone family, and you need a way out before they take you out with the trash. You and your mafia members need a backup plan so you decide to work for the new and prosperous Tattaglia mafia family. To deserve their trust, you must complete a dangerous task \u2013 steal the Corleone\u2019s diary. You have 60 minutes before anyone finds out. Will you make it out alive? Or will you be sleeping with the fishes?",
     "duration": "60 minutes",
-    "difficulty": "Max 9 Players",
-    "location": "130 Dundas Street West, Toronto, Ontario, M5G 1C3",
-    "price": "$36 + tax per person family friendly Book Now"
-  },
-  {
-    "name": "Fairytales",
+    "difficulty": "\u2605 \u2605 \u2605 \u2605 \u2605 (4/5)",
+    "price": "$36 + tax per person",
     "latitude": 43.655663,
     "longitude": -79.3846061,
-    "description": "An escape game is a real-life experience where participants are locked in a room and must use elements of the room, the group’s collective knowledge, and wits to discover clues, solve puzzles, and escape within 60 minutes. In this fairy tale-themed room, you'll have to find your way out using the power of your imagination.",
+    "source_urls": [
+      "https://www.enigmaroom.ca/godfather/"
+    ]
+  },
+  {
+    "name": "The Red Admiral",
+    "description": "The cold war has yet to end, as the battle for political and military power heightened tensions between the East and the West. Information is the key to prevailing in the ongoing struggles. You are tasked with collecting data along with your team of top secret spies. Today, you are given an opportunity to end the war. Your cover has allowed you to slip past security; now, the Enemy\u2019s Admiral wishes to meet face to face with your team.",
     "duration": "60 minutes",
-    "difficulty": "Max 7 Players",
-    "location": "130 Dundas Street West, Toronto, Ontario, M5G 1C3"
+    "difficulty": "4/5",
+    "location": "1187 Kennedy Rd, Scarborough",
+    "price": "35 /person",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "source_urls": [
+      "https://www.omventure.ca/items/the-red-admiral",
+      "https://www.omventure.ca"
+    ]
   },
   {
-    "name": "Bomb Squad",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "You must defuse the bomb now! This room has puzzles feature color elements 2-3 players 60 min $36 + tax per person family friendly Book Now Previous image Next image You might also like these Escape Rooms Haunted Toy Store Difficulty: ⭐⭐⭐⭐ Max 9 Players The Exorcist Difficulty: ⭐⭐⭐⭐ Max 9 Players Jungle Safari Difficulty: ⭐⭐⭐⭐ Max 9 Players The Lost Treasure Difficulty: ⭐⭐⭐ Max 9 Players Fairytales Difficulty: ⭐⭐⭐⭐ Max 7 Players Magic School Difficulty: ⭐⭐⭐⭐⭐ Max 7 Players Bomb Squad Difficulty: ⭐⭐⭐⭐ Max 3 Players Godfather Difficulty: ⭐⭐⭐⭐⭐ Max 9 Players Hannibal Difficulty: ⭐⭐⭐⭐⭐ Max 9 Players Bomb Squad Difficulty ★ ★ ★ ★ ★ 5/5 You’ve found a bomb in the city center today. It’s so powerful that it can turn the entire city to dust if it detonates. The bomb is set to explode in 60 minutes! You are the top bomb technicians, you need to examine the bomb, and it cannot be transported away from the laboratory. It means there is only one way out.",
+    "name": "The Penitentiary",
+    "description": "You suddenly wake up to find yourself locked in a cramped prison cell, cold, scared, the air-filled with silence. You soon realize that you are in the St. Temple Prison. This abandoned prison has a history of mysteriously taking the lives of its prisoners. If you don\u2019t want to be next, you have to escape...",
+    "duration": "60 minutes",
+    "difficulty": "4/5",
+    "location": {
+      "address": "7 7501 Woodbine Ave, Markham",
+      "city": "Markham",
+      "province": "ON",
+      "postalCode": "L3R 2W1"
+    },
+    "price": "35 /person",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "source_urls": [
+      "https://www.omventure.ca/items/the-penitentiary"
+    ]
+  },
+  {
+    "name": "The Kingdom of Cats",
+    "description": "The Cat King has been Catnapped! He vanished from his room one day and has been missing ever since! The whole royal family is scratching their ears as they search for their beloved King to no avail. You have been invited to a tea party by the Queen, as you are the greatest detectives in the human world. Will you be able to find the King and save the Cat Kingdom from falling into chaos?",
+    "duration": "60 minutes",
+    "difficulty": "3/5",
+    "location": "7 7501 Woodbine Ave, Markham",
+    "price": "35 /person",
+    "latitude": 43.7541119,
+    "longitude": -79.276337,
+    "source_urls": [
+      "https://www.omventure.ca/items/the-kingdom-of-cats"
+    ]
+  },
+  {
+    "name": "The Ninja",
+    "description": "This room requires you to remove your shoes before entering the dojo. After years of training under Master Fuma Kotaro, your final test is here. To prove your skills, work together to solve Master Kotaro\u2019s puzzles hidden in the Dojo. Your mission: find the ninja headbands within 60 minutes to become full-fledged Shinobis. Join the adventure and immerse yourself in the challenge where teamwork and cunning are your keys to success.",
+    "duration": "60 minutes",
+    "difficulty": "Intermediate \u2013 40% Success",
+    "location": "330 Yonge St, 2nd Floor Downtown Toronto",
+    "price": "$36 per person",
+    "latitude": 43.6572981,
+    "longitude": -79.38161649999999,
+    "max_players": "Max 8 Players",
+    "source_urls": [
+      "https://www.roundaboutcanada.com/rooms/butchers-basement/",
+      "https://www.roundaboutcanada.com",
+      "https://www.roundaboutcanada.com/rooms/corporate-events/",
+      "https://www.roundaboutcanada.com/rooms/the-ninja/",
+      "https://www.roundaboutcanada.com/rooms/the-prisoner/",
+      "https://www.roundaboutcanada.com/",
+      "https://www.roundaboutcanada.com/rooms/",
+      "https://www.roundaboutcanada.com/reviews/",
+      "https://www.roundaboutcanada.com/rooms/final-destination/",
+      "https://www.roundaboutcanada.com/rooms/back-to-the-mummy/"
+    ]
+  },
+  {
+    "name": "The Prisoner",
+    "description": "You and your friends have been wrongly accused of murder, facing an impending death sentence. Dive into a thrilling escape quest, delving into the prison\u2019s history of successful breakouts. Collaborate with your team, leveraging the clues left behind, to mastermind a daring breakout for all inmates. With just 60 minutes before the guards escort you to execution, this immersive experience challenges your group\u2019s teamwork and quick thinking.",
+    "duration": "60 Minutes",
+    "difficulty": "Advanced \u2013 35% Success",
+    "location": "330 Yonge St, 2nd Floor Downtown Toronto",
+    "price": "$36 per person",
+    "latitude": 43.6572981,
+    "longitude": -79.38161649999999,
+    "max_players": "Max 9 Players",
+    "source_urls": [
+      "https://www.roundaboutcanada.com/rooms/butchers-basement/",
+      "https://www.roundaboutcanada.com",
+      "https://www.roundaboutcanada.com/rooms/corporate-events/",
+      "https://www.roundaboutcanada.com/rooms/the-ninja/",
+      "https://www.roundaboutcanada.com/rooms/the-prisoner/",
+      "https://www.roundaboutcanada.com/",
+      "https://www.roundaboutcanada.com/rooms/",
+      "https://www.roundaboutcanada.com/rooms/final-destination/",
+      "https://www.roundaboutcanada.com/rooms/back-to-the-mummy/"
+    ]
+  },
+  {
+    "name": "The Champion of Dragons",
+    "description": "Had so much fun here! Did the butcher room with myself and one other friend and managed to escape... Great way to spend an afternoon.",
+    "duration": "60 minutes",
+    "difficulty": "Unknown",
+    "latitude": 43.6572981,
+    "longitude": -79.38161649999999,
+    "source_urls": [
+      "https://www.roundaboutcanada.com/",
+      "https://www.roundaboutcanada.com",
+      "https://www.roundaboutcanada.com/reviews/"
+    ]
+  },
+  {
+    "name": "The Butcher\u2019s Room",
+    "description": "Did the butcher\u2019s room, the set design was superb! I\u2019ve done a couple escape rooms in different cities and I\u2019m always disoriented on what I can and cannot do and sometimes the exercises can be so convoluted. This one was my favourite by far as it\u2019s straightforward. We almost made it within the hour but this room was more like a 3/5 difficulty if you keep a clear mind despite all the horror.",
+    "difficulty": "3/5",
+    "latitude": 43.6572981,
+    "longitude": -79.38161649999999,
+    "duration": "60 minutes",
+    "source_urls": [
+      "https://www.roundaboutcanada.com/"
+    ]
+  },
+  {
+    "name": "The Butcher's Basement",
+    "description": "Did the butcher\u2019s room, the set design was superb! I\u2019ve done a couple escape rooms in different cities and I\u2019m always disoriented on what I can and cannot do and sometimes the exercises can be so convoluted. This one was my favourite by far as it\u2019s straightforward... The puzzles were fun/interesting to solve \u2014 always looking for codes/number patterns so we could unlock the next room and progress. The creepy props all around always kept me wondering, 'what's a clue, what isn't?' adding to the fun, suspense, and mystery of it all.",
+    "duration": "60 minutes",
+    "difficulty": "Hardest room",
+    "location": "Toronto",
+    "latitude": 43.6572981,
+    "longitude": -79.38161649999999,
+    "source_urls": [
+      "https://www.roundaboutcanada.com/",
+      "https://www.roundaboutcanada.com",
+      "https://www.roundaboutcanada.com/reviews/"
+    ]
+  },
+  {
+    "name": "The Prisoner Max 9 Players 60 Min Family Friendly",
+    "description": "",
+    "latitude": 43.6572981,
+    "longitude": -79.38161649999999,
+    "source_urls": [
+      "https://www.roundaboutcanada.com/rooms/corporate-events/"
+    ]
+  },
+  {
+    "name": "The Mystery of the Lost Ship",
+    "description": "You find yourselves in a mysterious room filled with ancient artifacts. Your mission: solve the puzzles and find the key to escape before time runs out.",
+    "duration": "60 minutes",
+    "difficulty": "Medium",
+    "location": {
+      "city": "San Francisco",
+      "state": "CA"
+    },
+    "price": "$30 per person",
+    "latitude": 43.6493911,
+    "longitude": -79.39512839999999,
+    "source_urls": [
+      "https://www.escapebox.ca/cart",
+      "https://trapped.com/locations.html",
+      "https://www.vrcade.ca/contact-us",
+      "https://www.adventurecitygames.com/fr/toronto/liste-des-jeux/",
+      "https://www.vrcade.ca/cart",
+      "https://www.inblackescape.com/booking",
+      "https://www.adventurecitygames.com/en/ottawa/games-list/"
+    ]
+  },
+  {
+    "name": "The 13th Exit",
+    "description": "It\u2019s below In a long-forgotten mansion hidden by time, a group stumbles upon an adventure that defies reality. This mysterious abode, crafted by a genius lost to history, is a maze of shifting rooms and enigmatic puzzles. Each chamber presents a piece of a cryptic tale, leading them deeper into the fabric of an unseen world. With time slipping away, they must unravel the secrets that weave through the mansion's heart, where the 13th exit holds the key to their escape.",
+    "duration": null,
+    "latitude": 43.6493911,
+    "longitude": -79.39512839999999,
+    "source_urls": [
+      "https://trapped.com/themes.html"
+    ]
+  },
+  {
+    "name": "The Dollhouse",
+    "description": "On the outskirts of town there is an old mansion once owned by a wealthy collector and his family. After the mysterious disappearance of his wife, he shut himself away and he and his daughter were never seen again. Strange sounds coming from the mansion and odd disappearances around town caused rumours to spread that the Collector had a dark secret. Despite the rumours, no one had ever been brave enough to investigate the mansion\u2026 until now. Not long after entering, you are quickly subdued by the Collector and left unconscious. After some time, you open your eyes\u2026",
+    "duration": "60 MINUTES",
+    "difficulty": "14A",
+    "location": [
+      "Burlington",
+      "Niagara Falls",
+      "Ottawa",
+      "Scarborough"
+    ],
+    "players": 3,
+    "price": null,
+    "latitude": 43.6493911,
+    "longitude": -79.39512839999999,
+    "source_urls": [
+      "https://trapped.com/themes.html"
+    ]
+  },
+  {
+    "name": "The Carnival (PG)",
+    "description": "A spectacular Carnival has arrived in town, and you've all come to see the main attraction: the Fortune Teller. However, upon entering you find yourselves transported into a world of treacherous delights, and mysterious creatures. You are trapped in the Carnival and your only chance of escape is to find the Fortune Teller and have your fate revealed! Will you escape in the time he has given you? Or will you be cursed to wander the Carnival forever?",
+    "duration": "60 MINUTES",
+    "location": "Calgary, Edmonton, Oshawa, Toronto Downtown, Midnight Arcade",
+    "latitude": 43.6493911,
+    "longitude": -79.39512839999999,
+    "source_urls": [
+      "https://trapped.com/themes.html"
+    ]
+  },
+  {
+    "name": "The Legend of the House",
+    "description": "On a stormy night, you and your team have decided to sneak into the house to uncover the mystery within, and to find the missing family member. As you\u2019re walking in, you hear a loud bang. The door won\u2019t budge. The barking is approaching...",
+    "duration": "60 MINUTES",
+    "location": "Ajax Kanata Markham Niagara Falls Mississauga Guelph 7734 Hound Lane (14A)",
+    "price": null,
+    "difficulty": "4-8 players",
+    "latitude": 43.6493911,
+    "longitude": -79.39512839999999,
+    "source_urls": [
+      "https://trapped.com/themes.html"
+    ]
+  },
+  {
+    "name": "The Noir",
+    "description": "I always heard stories about my grandfather. About how great of a detective he was, about all the lives lost that he avenged by seeking justice for them. But there was one story that never had an ending: the year was 1947, 4 gangsters were found dead in a dive bar owned by the mob. Grandad was assigned to the case to find the person responsible for this almost admirable crime. He had 4 suspects, each more likely a culprit than the last. I never got a chance to hear the ending to this story, if only I could see things through grandad\u2019s eyes and find the ending myself\u2026",
+    "duration": "90 MINUTES",
+    "location": "Ajax Kanata Newmarket Toronto Downtown Vaughan Windsor The Noir (14A)",
+    "price": null,
+    "difficulty": "3-8 players",
+    "latitude": 43.6493911,
+    "longitude": -79.39512839999999,
+    "source_urls": [
+      "https://trapped.com/themes.html"
+    ]
+  },
+  {
+    "name": "The Lab: Lockdown",
+    "description": "Our Most Popular Theme Loved by players of all levels. Beginner-Friendly Perfect for first-time escape room adventurers. Innovative Puzzles Breaks away from the typical escape room formula. Immersive Experience Dive into a storyline that keeps you fully engaged! Immersive and Realistic Design Every element fits logically into the story, creating a highly believable and engaging experience with multiple endings. Unique and Creative Puzzles Puzzles are logical, and offer multiple solutions, encouraging creativity and teamwork. Physical and Technical Challenges Includes tasks requiring physical coordination and basic programming skills, making it diverse and dynamic.",
+    "duration": "60 minutes",
+    "difficulty": "Beginner-Friendly",
+    "latitude": 43.7598892,
+    "longitude": -79.2276521,
+    "price": "Premium Games ( 80-Minute )",
+    "location": "3478 Lawrence Ave. E. Unit C06, Toronto",
+    "source_urls": [
+      "https://www.revoescape.com/copy-of-admission-prices",
+      "https://www.revoescape.com/lockdown",
+      "https://www.revoescape.com/booking",
+      "https://www.revoescape.com/booking-calendar/the-lab-lockdown-80mins-full-experience",
+      "https://www.revoescape.com/booking-policy",
+      "https://www.revoescape.com/survey",
+      "https://www.revoescape.com/event",
+      "https://www.revoescape.com/",
+      "https://www.revoescape.com/booking-calendar/bunker-ai-s-martyrdom-80mins-full",
+      "https://www.revoescape.com/faq",
+      "https://www.revoescape.com/booking-calendar/the-lab-lockdown-60mins-mini-game",
+      "https://www.revoescape.com"
+    ]
+  },
+  {
+    "name": "The Tomb: Raiders of the Sword",
+    "description": "Offers approximately 75% of the full experience, with a more affordable price. Some rooms, challenges and props are omitted, and costumes are not provided.",
+    "duration": "60 minutes",
+    "price": "Basic Games ( 60-Minute )",
+    "latitude": 43.7598892,
+    "longitude": -79.2276521,
+    "difficulty": "Easy",
+    "location": "",
+    "source_urls": [
+      "https://www.revoescape.com/copy-of-admission-prices",
+      "https://www.revoescape.com/booking-calendar/the-lab-lockdown-80mins-full-experience",
+      "https://www.revoescape.com/booking-policy",
+      "https://www.revoescape.com/survey",
+      "https://www.revoescape.com/tomb",
+      "https://www.revoescape.com/booking-calendar/bunker-ai-s-martyrdom-80mins-full",
+      "https://www.revoescape.com/faq",
+      "https://www.revoescape.com/booking-calendar/the-lab-lockdown-60mins-mini-game"
+    ]
+  },
+  {
+    "name": "THE LAB : LOCKDOWN",
+    "description": "Our most popular game! You're locked in a secret lab. You have 60 minutes to find clues and solve puzzles to escape before the clock runs out.",
+    "latitude": 43.7598892,
+    "longitude": -79.2276521,
+    "source_urls": [
+      "https://www.revoescape.com/rooms"
+    ]
+  },
+  {
+    "name": "THE TOMB: RAIDERS OF THE SWORD",
+    "description": "You're trapped in an ancient tomb filled with traps and puzzles. The only way out is to find the legendary sword and escape before the tomb's curse consumes you within 60 minutes.",
+    "latitude": 43.7598892,
+    "longitude": -79.2276521,
+    "source_urls": [
+      "https://www.revoescape.com/rooms"
+    ]
+  },
+  {
+    "name": "The Mystery of the Haunted Mansion",
+    "description": "Explore a spooky mansion filled with secrets and solve riddles to escape the curse.",
+    "duration": "75 minutes",
+    "difficulty": "Hard",
+    "price": "$32 per person",
+    "latitude": 43.654687,
+    "longitude": -79.3798559,
+    "location": "Nashville, TN",
+    "source_urls": [
+      "https://www.vrcade.ca/menu",
+      "https://www.vrcade.ca/pixel-hack",
+      "https://www.inblackescape.com/contact",
+      "https://www.vrcade.ca/about",
+      "https://www.escapetheship.com/",
+      "https://www.vrcade.ca/events",
+      "https://www.vrcade.ca/cafe",
+      "https://www.vrcade.ca/manor-of-escape",
+      "https://www.vrcade.ca/",
+      "https://www.vrcade.ca/vr-escape-rooms",
+      "https://www.escapetheship.com/ottawa",
+      "https://www.inblackescape.com/booking",
+      "https://www.captiverooms.com/the-blind-tiger-oc",
+      "https://www.escapetheship.com/faq",
+      "https://www.inblackescape.com/",
+      "https://www.vrcade.ca/rush-z"
+    ]
+  },
+  {
+    "name": "The Secret Chamber",
+    "location": "123 Main St, Anytown",
+    "price": "$28 per person",
+    "description": "Deep within an ancient castle lies a secret chamber hidden from the world for centuries. You have one hour to uncover its secrets before the door locks forever.",
+    "duration": "60 minutes",
+    "latitude": 43.6522961,
+    "longitude": -79.38146499999999,
+    "difficulty": "Expert",
+    "source_urls": [
+      "https://www.inblackescape.com/contact",
+      "https://www.inblackescape.com/wholeTheme",
+      "https://www.vrcade.ca/space-academy",
+      "https://www.escapebox.ca/",
+      "https://www.adventurecitygames.com/en/toronto/games-list/",
+      "https://www.vrcade.ca/",
+      "https://www.escapetheship.com/hiring",
+      "https://www.escapetheship.com/privatecharters",
+      "https://www.inblackescape.com/booking",
+      "https://www.captiverooms.com/the-blind-tiger-oc",
+      "https://www.adventurecitygames.com/en/quebec/games-list/",
+      "https://www.captiverooms.com/oceancity",
+      "https://www.inblackescape.com/"
+    ]
+  },
+  {
+    "name": "The Mystery of Dr. Brain",
+    "description": "You and your team are in a race against time to stop Dr. Brain's evil plan. Solve puzzles, find hidden objects, and unravel the mystery before it's too late.",
+    "duration": "60 minutes",
+    "difficulty": "Intermediate",
+    "latitude": 43.6571929,
+    "longitude": -79.38367339999999,
+    "source_urls": [
+      "https://www.adventurecitygames.com/en/quebec/games-list/",
+      "https://www.captiverooms.com/the-blind-tiger-to",
+      "https://www.inblackescape.com/faq",
+      "https://www.escapetheship.com/cart",
+      "https://www.escapetheship.com/privatecharters",
+      "https://www.vrcade.ca/ghost-patrol",
+      "https://www.escapetheship.com/faq",
+      "https://www.escapebox.ca/"
+    ]
+  },
+  {
+    "name": "The Secret Agent's Dilemma",
+    "description": "Discover secret messages, crack codes and outsmart enemy agents in this thrilling spy-themed game.",
+    "duration": "60 minutes",
+    "difficulty": "Easy",
+    "location": "Chicago",
+    "latitude": 43.654687,
+    "longitude": -79.3798559,
+    "source_urls": [
+      "https://www.inblackescape.com/booking"
+    ]
+  },
+  {
+    "name": "The Heist",
+    "description": "In this exhilarating game, your team of aspiring thieves must crack codes and solve puzzles to pull off the ultimate heist. Can you outsmart the security system and escape within 60 minutes?",
+    "duration": "60 minutes",
+    "difficulty": "Moderate",
+    "latitude": 43.654687,
+    "longitude": -79.3798559,
+    "price": "$34 per person",
+    "location": "New York City",
+    "source_urls": [
+      "https://www.adventurecitygames.com/en/toronto/games-list/",
+      "https://www.vrcade.ca/events",
+      "https://www.inblackescape.com/booking",
+      "https://www.vrcade.ca/party-playland",
+      "https://www.escapetheship.com/hamilton",
+      "https://www.vrcade.ca/ninja-trials",
+      "https://www.adventurecitygames.com/fr/toronto/liste-des-jeux/",
+      "https://www.escapetheship.com/",
+      "https://www.escapetheship.com/faq",
+      "https://www.adventurecitygames.com/en/ottawa/games-list/",
+      "https://www.vrcade.ca/the-smurfs-bb",
+      "https://www.vrcade.ca/about",
+      "https://www.vrcade.ca/contact-us",
+      "https://www.vrcade.ca/runaway-train",
+      "https://www.escapetheship.com/privatecharters",
+      "https://www.escapetheship.com/ottawa",
+      "https://www.captiverooms.com/oceancity",
+      "https://www.vrcade.ca/",
+      "https://www.adventurecitygames.com/en/quebec/games-list/"
+    ]
+  },
+  {
+    "name": "The Enigma of the Mansion",
+    "description": "A century-old mystery awaits in this grand mansion. Solve cryptic puzzles and unravel the secrets hidden within its walls to escape before time runs out.",
+    "duration": "75 minutes",
+    "difficulty": "Hard",
+    "latitude": 43.654687,
+    "longitude": -79.3798559,
+    "source_urls": [
+      "https://www.inblackescape.com/booking"
+    ]
+  },
+  {
+    "name": "The Haunted Mansion",
+    "location": "Haunted mansion setting",
+    "price": "$29 per person",
+    "description": "Solve supernatural puzzles and escape this eerie mansion before the witching hour.",
+    "duration": "75 minutes",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "difficulty": "Easy to Moderate",
+    "source_urls": [
+      "https://www.inblackescape.com/wholeTheme",
+      "https://www.adventurecitygames.com/fr/toronto/liste-des-jeux/",
+      "https://www.vrcade.ca/space-academy"
+    ]
+  },
+  {
+    "name": "The Suspense/Suspense/Storyline Activity",
+    "description": "2-6 people, $55/person + HST. 60 minutes.",
+    "difficulty": null,
+    "location": null,
+    "price": "$55/person + HST",
+    "latitude": 43.654687,
+    "longitude": -79.3798559,
+    "source_urls": [
+      "https://www.inblackescape.com/wholeTheme"
+    ]
+  },
+  {
+    "name": "The Best 60 Minutes of Your Day",
+    "description": "Gather your team, put away your phones and transport yourself to another world!",
+    "duration": "60 minutes",
+    "latitude": 43.6571929,
+    "longitude": -79.38367339999999,
+    "source_urls": [
+      "https://www.captiverooms.com/"
+    ]
+  },
+  {
+    "name": "The Blind Tiger",
+    "price": "$33 Per Person",
+    "difficulty": "9/10 DIFFICULTY",
+    "max_players": "MAX 12 PLAYERS",
+    "latitude": 43.6571929,
+    "longitude": -79.38367339999999,
+    "description": "You have 60 minutes to find their loot\u2026 The story was unbelievable! You had heard the rumours since John Dillinger and his gang were killed, the money from their last bank robbery had never been recovered and was hidden somewhere in Chicago. This was a story that you couldn\u2019t ignore...",
+    "duration": "60 minutes",
+    "source_urls": [
+      "https://www.captiverooms.com/toronto",
+      "https://www.captiverooms.com/the-blind-tiger-to",
+      "https://www.captiverooms.com/the-blind-tiger-misssissauga",
+      "https://www.captiverooms.com/mississauga",
+      "https://www.captiverooms.com/the-blind-tiger-oc"
+    ]
+  },
+  {
+    "name": "The Farm",
+    "price": "$35 Per Person",
+    "difficulty": "8/10 DIFFICULTY",
+    "max_players": "MAX 6 PLAYERS",
+    "latitude": 43.6571929,
+    "longitude": -79.38367339999999,
+    "source_urls": [
+      "https://www.captiverooms.com/toronto"
+    ]
+  },
+  {
+    "name": "The 13 Doors Escape Room",
+    "description": "Did the 13 doors escape room! group of 4. we made it out but just in time, about 4 minutes to spare! So a perfect challenge for the hour time slot. Staff was also super fun and friendly and gave a great atmosphere. Will certainly go back for a new room!",
+    "duration": "60 minutes",
+    "difficulty": "Perfectly challenging",
+    "location": null,
+    "price": null,
+    "latitude": 43.6571929,
+    "longitude": -79.38367339999999,
+    "source_urls": [
+      "https://www.captiverooms.com/toronto",
+      "https://www.captiverooms.com/oceancity"
+    ]
+  },
+  {
+    "name": "The Chase",
+    "description": "THINK! YOU HAVE 60 MINUTES TO SAVE YOUR CREW\u2026 The sound of the cannons are deafening as you and your mates cower in the darkness of your cells, praying that the next shot doesn\u2019t come crashing through the hull and send you all to a watery grave. How you ended up a prisoner on Blackbeard\u2019s ship being chased by the Spanish Armada in the middle of the Carribbean is another story, one that you might not live to tell. The ship is badly damaged and won\u2019t survive the hour, there must be a way out of these chains and onto the deck, at least there you will stand a chance. You got the crew into this mess and you MUST get them out. The clock is ticking.",
+    "duration": "60 minutes",
+    "latitude": 43.6571929,
+    "longitude": -79.38367339999999,
+    "source_urls": [
+      "https://www.captiverooms.com/pieces-of-eight-mb"
+    ]
+  },
+  {
+    "name": "The Prison Break",
+    "description": "You've been framed for a crime you didn't commit and must gather evidence, outsmart the guards, and escape the high-security prison before it's too late.",
+    "duration": "75 minutes",
+    "difficulty": "Hard",
+    "price": "$30 per person",
+    "latitude": 43.6361433,
+    "longitude": -79.3966119,
+    "source_urls": [
+      "https://www.escapetheship.com/faq",
+      "https://www.captiverooms.com/the-blind-tiger-to"
+    ]
+  },
+  {
+    "name": "The Secret Agent's Mission",
+    "description": "You are a secret agent on a mission to defuse a bomb in an enemy's hideout. You have only 60 minutes before the bomb explodes.",
+    "duration": "60 minutes",
+    "difficulty": "Hard",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.captiverooms.com/the-blind-tiger-to",
+      "https://www.vrcade.ca/rush-z"
+    ]
+  },
+  {
+    "name": "The Cabin Mystery",
+    "description": "The light is blinding as your eyes slowly begin to open. The stark white of the room starts to come into focus despite the terrible pounding in your head. Where am I? You see the same look of confusion on the faces of your friends as they begin to awaken all around you ? What is this place? More importantly , How did we get here? The last thing you remember was sitting around the cabin laughing and joking with a glass of wine after dinner and then\u2026. Nothing. WAIT, this isn't everyone, Billy and Crystal were at dinner last night but now they\u2019re GONE.",
+    "duration": "60 minutes",
+    "location": "The Cabin",
+    "latitude": 43.6571929,
+    "longitude": -79.38367339999999,
+    "source_urls": [
+      "https://www.captiverooms.com/the-harvest"
+    ]
+  },
+  {
+    "name": "The Haunted Asylum",
+    "description": "An abandoned asylum is rumored to be haunted. You enter with a group of investigators, but as you delve deeper into the mystery, you realize that something truly evil resides within. Can you solve the puzzles and escape before it's too late?",
+    "duration": "90 minutes",
+    "difficulty": "Extreme",
+    "latitude": 43.6571929,
+    "longitude": -79.38367339999999,
+    "source_urls": [
+      "https://www.captiverooms.com/the-blind-tiger-oc"
+    ]
+  },
+  {
+    "name": "The Toronto Stock Exchange Heist",
+    "description": "The Toronto Stock Exchange faces an unprecedented threat: a massive hack by the elusive 'Red Masks' group. Their goal? Siphon off vast sums of money undetected, putting the entire nation's economy on the line. The clock is ticking as this financial fortress stands on the brink of chaos. YOUR MISSION Selected for an urgent and crucial task, you must connect with '0xsen', a former 'Red Masks' hacker turned pacifist, now concealed in Old Toronto's historic district. In this outdoor escape game, you'll engage in secure communications with 0xsen to halt the cyber attack on the Toronto Stock Exchange. As you earn his trust and join his cause, you'll be challenged to solve intricate puzzles and decipher enigmas that form a web of high-tech intrigue.",
     "duration": "Not specified",
     "difficulty": "Not specified",
-    "location": "130 Dundas Street West, 3rd Floor Toronto, Ontario, M5G 1C3",
-    "price": "$36 + tax per person"
+    "location": {
+      "starting_point": {
+        "address": "Bike Share Toronto, Union Station, Toronto, ON M5J 1E6",
+        "coordinates": {
+          "lat": 43.645591,
+          "lng": -79.380391
+        }
+      },
+      "finish_point": {
+        "address": "1 Dundas St E, Toronto, ON M5B 2R8",
+        "coordinates": {
+          "lat": 43.6562476,
+          "lng": -79.3807226
+        }
+      }
+    },
+    "price": "Book Your Tickets $18.4 CAD per player Taxes Included",
+    "latitude": 43.6522961,
+    "longitude": -79.38146499999999,
+    "source_urls": [
+      "https://www.adventurecitygames.com/en/toronto/panic-in-old-toronto/"
+    ]
   },
   {
-    "name": "Godfather",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "You are a member of the Corleone mafia family – one of the most powerful families in the Big Apple until now. Dark times have come to the Corleone family, and you need a way out before they take you out with the trash. You and your mafia members need a backup plan so you decide to work for the new and prosperous Tattaglia mafia family. To deserve their trust, you must complete a dangerous task – steal the Corleone’s diary. You have 60 minutes before anyone finds out. Will you make it out alive? Or will you be sleeping with the fishes? $36 + tax per person family friendly Book Now Previous image Next image",
+    "name": "The Evil Dragon of Toronto",
+    "description": "Embark on an epic adventure to stop a dragon menacing Toronto. Navigate iconic sites with speed and caution. This is more than an escape game: it's your chance to become an urban hero.",
+    "duration": "1-2h",
+    "difficulty": "#beginner",
+    "location": {
+      "start": {
+        "address": "Memorial - Old City Hall Cenotaph, 50 Queen St W, Toronto, ON M5H 2Y4",
+        "coordinates": {
+          "lat": 43.652105,
+          "lng": -79.381509
+        }
+      },
+      "end": {
+        "address": "CN Tower, 290 Bremner Blvd, Toronto, ON M5V 3L9",
+        "coordinates": {
+          "lat": 43.6431155,
+          "lng": -79.3882891
+        }
+      }
+    },
+    "price": "$18.4 CAD per player (Taxes Included)",
+    "latitude": 43.6522961,
+    "longitude": -79.38146499999999,
+    "source_urls": [
+      "https://www.adventurecitygames.com/en/toronto/the-evil-dragon-of-toronto/",
+      "https://www.adventurecitygames.com/en/toronto/book/10/",
+      "https://www.adventurecitygames.com/en/toronto/games-list/"
+    ]
+  },
+  {
+    "name": "The Mystery of the Stolen Diamonds",
+    "description": "The Mystery of the Stolen Diamonds has a success rate of 47%.",
+    "duration": null,
+    "difficulty": null,
+    "location": {
+      "lat": 43.652105,
+      "lng": -79.381509
+    },
+    "price": null,
+    "latitude": 43.6522961,
+    "longitude": -79.38146499999999,
+    "source_urls": [
+      "https://www.adventurecitygames.com/en/toronto/games-list/"
+    ]
+  },
+  {
+    "name": "The Jewels of Calgary",
+    "description": "Dive into an epic outdoor adventure where legends and family secrets collide! Crack each riddle and piece together the clues scattered as you unravel a thrilling family legacy.",
+    "duration": "1-2h",
+    "location": {
+      "starting_point": "In front of Studio Bell, 851 4 St. SE, Calgary, AB T2G 0R9",
+      "finish_point": "1 St SW & 8 Ave SW, Calgary, AB T2P 1B5"
+    },
+    "price": "$18.4 CAD per player Taxes Included",
+    "latitude": 43.6522961,
+    "longitude": -79.38146499999999,
+    "source_urls": [
+      "https://www.adventurecitygames.com/en/calgary/the-jewels-of-calgary/"
+    ]
+  },
+  {
+    "name": "The Lab",
+    "description": "A secret government lab has been taken over by a rogue AI. It's up to you and your team to hack the mainframe, override the security system, and shut down the AI before it's too late.",
+    "duration": "75 minutes",
+    "difficulty": "Medium-Hard",
+    "latitude": 43.6522961,
+    "longitude": -79.38146499999999,
+    "source_urls": [
+      "https://www.escapetheship.com/",
+      "https://www.adventurecitygames.com/en/quebec/games-list/"
+    ]
+  },
+  {
+    "name": "The Cabin in the Woods",
+    "description": "You're trapped in a cabin deep in the woods with no way out. But that's just the beginning of your problems. Something evil is lurking outside, and it wants in.",
+    "duration": "60 minutes",
+    "difficulty": "Low-Medium",
+    "latitude": 43.6522961,
+    "longitude": -79.38146499999999,
+    "source_urls": [
+      "https://www.vrcade.ca/cyberclash",
+      "https://www.vrcade.ca/contact-us",
+      "https://www.vrcade.ca/events",
+      "https://www.escapetheship.com/privatecharters",
+      "https://www.adventurecitygames.com/en/quebec/games-list/"
+    ]
+  },
+  {
+    "name": "The Mystery of Eldridge Mansion",
+    "description": "Solve the puzzles in this historic mansion to unravel a century-old mystery. Recommended for ages 12 and up.",
+    "duration": "60 minutes",
+    "difficulty": "Medium",
+    "location": "Chicago, IL",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.escapetheship.com/about",
+      "https://www.vrcade.ca/arizona-sunshine",
+      "https://www.vrcade.ca/cyberclash",
+      "https://www.vrcade.ca/freeroam-vr",
+      "https://www.escapetheship.com/privacy",
+      "https://www.vrcade.ca/events",
+      "https://www.adventurecitygames.com/fr/toronto/liste-des-jeux/",
+      "https://www.vrcade.ca/",
+      "https://www.vrcade.ca/time-travel-paradox",
+      "https://www.escapetheship.com/faq",
+      "https://www.vrcade.ca/party-playland"
+    ]
+  },
+  {
+    "name": "The Mystery of Room X",
+    "description": "You have been trapped in a mysterious room and need to solve puzzles to escape within 60 minutes.",
+    "duration": "60 minutes",
+    "difficulty": "Moderate",
+    "latitude": 43.6492207,
+    "longitude": -79.3772949,
+    "source_urls": [
+      "https://www.adventurecitygames.com/en/ottawa/games-list/",
+      "https://www.vrcade.ca/events"
+    ]
+  },
+  {
+    "name": "The Experience",
+    "description": "This experience far exceeded my expectations and I would wholeheartedly do it again and recommend it to all my friends! Thoroughly enjoyed the experience and will be back to try a new one! The venue, actors, theme was exceptional! Best Escape Room we've ever done! I love escape rooms and experiences, and this one did not disappoint We're all experienced players and it was the BEST any of us have ever done! The actors did an amazing job, and their banter was as a highlight of the room. I enjoyed having multiple actors in the room and would enjoy another room with multiple characters to interact with. The actors were fantastic the entire time. Wow! Really well thought-through escape game with attention to historic details and super immersive.",
     "duration": "Not specified",
     "difficulty": "Not specified",
-    "location": "130 Dundas Street West, 3rd Floor Toronto, Ontario, M5G 1C3"
+    "location": "Not specified",
+    "price": "Not specified",
+    "latitude": 43.6786349,
+    "longitude": -79.41071409999999,
+    "source_urls": [
+      "https://www.secretcityadventures.com/in-person-games/bootleggers"
+    ]
   },
   {
-    "name": "Godfather Difficulty ★ ★ ★ ★ ★ 4/5",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "$36 + tax per person family friendly 2-9 players 60 min You are a member of the Corleone mafia family – one of the most powerful families in the Big Apple until now.",
-    "duration": "60 min",
-    "difficulty": "★ ★ ★ ★ ★ 4/5"
-  },
-  {
-    "name": "Escape Room Activity",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "You suddenly find yourself trapped in a game. The only way to get out is to play and win the game. Will you escape? $36 + tax per person family friendly Book Now Difficulty ★ ★ ★ ★ ★ 5/5 2-9 players 60 min",
-    "duration": "60 min",
-    "difficulty": "5/5"
-  },
-  {
-    "name": "Hannibal (Infamous)",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "Difficulty ★ ★ ★ ★ ★ 5/5 Horror 2-9 players 60 min There is a killer psychopath on the loose, chopping up victims every day. Protests across the country demand immediate action from government. You and your team of FBI agents have been tasked to bring down the killer psychopath. The case gets political when the killer kidnaps the senator’s daughter and threatens to kill her. You are running out of time, so you decide to visit the infamous Hannibal to ask him for a lead. But when your team enters the prison, you find that everyone is gone. The security system was triggered and the emergency light is on. Someone is lurking in the shadows.",
-    "duration": "60 min",
-    "difficulty": "5/5",
-    "price": "$36 + tax per person family friendly"
-  },
-  {
-    "name": "Team Building Event",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "Perfect team building exercise to activate your team’s problem-solving abilities. Escape rooms are conveniently located in Downtown Toronto. We offer corporate events, birthday parties and special events. Past clients include Google, Apple, Uber, Microsoft, Coca-Cola, Pepsi, Cineplex, TD, CIBC, Amazon, RBC, and more.",
-    "location": "130 Dundas Street West, Toronto",
-    "price": "$36 plus Tax per person"
-  },
-  {
-    "name": "The lost treasure",
-    "latitude": 43.655663,
-    "longitude": -79.3846061,
-    "description": "No description provided.",
+    "name": "The Perfect Bite murder mystery dinner experience",
+    "description": "Share the thrill of a one-of-a-kind murder mystery dinner experience in Vancouver with The Perfect Bite eGift card. Perfect for whodunnit fanatics hungry to crack a case. Grab a gift card for your friends and family before tickets vanish!",
     "duration": "Not specified",
     "difficulty": "Not specified",
-    "location": "130 Dundas Street West, 3rd Floor Toronto, Ontario, M5G 1C3"
+    "location": "Vancouver",
+    "latitude": 43.6786349,
+    "longitude": -79.41071409999999,
+    "source_urls": [
+      "https://www.secretcityadventures.com/gift-cards"
+    ]
+  },
+  {
+    "name": "The Village at Black Creek Escape Room",
+    "description": "Test your courage within the shadowy confines of a historic village alongside its eerie inhabitants. Our actors bring this experience to life. Let their immersive performances pull you into the story at the heart of the village. A real historical village Built within the historical Village at Black Creek, the sets and costumes will whisk you away to a bygone era. Wander the old village after dark and after hours. Your ticket is your key to be whisked away to a time long lost.",
+    "duration": "Not specified",
+    "difficulty": "Not specified",
+    "location": "The Village at Black Creek",
+    "price": "Price not explicitly stated, but mentioned as 'the price you see listed is for one individual ticket'",
+    "latitude": 43.6786349,
+    "longitude": -79.41071409999999,
+    "source_urls": [
+      "https://www.secretcityadventures.com/in-person-games/dark-things"
+    ]
+  },
+  {
+    "name": "The Dragon's Song",
+    "description": "What thou shalt expect Be not afraid, for this journey you are about to embark upon is nothing but an adventure of the mind. Whilst we have brought forth living actors to aid you in your quest, they will not encroach upon your space, and it is your duty to not disturb theirs. Our sets and costumes have been crafted with great care, to transport you to another realm and allow you to lose yourself in the experience.",
+    "duration": "Not specified",
+    "difficulty": "Not specified",
+    "location": "a tower within Casa Loma, a place where only the bravest adventurers and alchemists are worthy to go",
+    "price": "Thou might embark on the journey with To complete the task, thou art granted just to reach the game and once your are inside The cost of thy entry is",
+    "latitude": 43.6786349,
+    "longitude": -79.41071409999999,
+    "source_urls": [
+      "https://www.secretcityadventures.com/in-person-games/dragon"
+    ]
+  },
+  {
+    "name": "The Escape Room Adventure",
+    "description": "Absolutely loved this with a fantastic storyline. I was unsure about doing a puzzle room with strangers, but there were enough puzzles around the room that it was easy to divide and conquer. I also loved the interaction with the actors, they were brilliant and made the escape room truly unique.",
+    "duration": null,
+    "difficulty": null,
+    "location": null,
+    "price": null,
+    "latitude": 43.6786349,
+    "longitude": -79.41071409999999,
+    "source_urls": [
+      "https://www.secretcityadventures.com/in-person-games/dragon"
+    ]
+  },
+  {
+    "name": "The Perfect Bite",
+    "description": "The mysterious one-of-a-kind dinner party provides a fun escape and a chance to dress to impress for an evening. While being entertained, guests will also indulge in a delicious four-course meal at a local French-inspired bistro.",
+    "duration": "60 minutes (implied)",
+    "difficulty": "Not specified",
+    "location": "Local French-inspired bistro",
+    "price": "Not specified",
+    "latitude": 43.6786349,
+    "longitude": -79.41071409999999,
+    "source_urls": [
+      "https://www.secretcityadventures.com/the-perfect-bite/london-uk",
+      "https://www.secretcityadventures.com/the-perfect-bite/toronto",
+      "https://www.secretcityadventures.com/the-perfect-bite/vancouver/gift-card",
+      "https://www.secretcityadventures.com/the-perfect-bite/vancouver",
+      "https://www.secretcityadventures.com/gift-cards"
+    ]
+  },
+  {
+    "name": "The Wedding Party",
+    "description": "This experience includes a The Wedding Party has Play in teams of up to This reception will last This experience can be \u201cChallenging, fun, immersive, talented actors, multi-stage, good storytelling, great use of players\u2019 cellphones/internet access to add elements. Unique night out!\u201d \u201cOne of the things that Secret City does remarkably well is creating fascinating crossover hooks \u2014 a pirate boat cruise at sunset, exploring the inner walls of an actual heritage castle, and now a wedding reception.\u201d \u201cThis is a night you won\u2019t forget. There\u2019s over 8 fantastic live actors and on top of that, the food was top notch\u201d",
+    "duration": "60 minutes",
+    "difficulty": "Challenging",
+    "latitude": 43.6786349,
+    "longitude": -79.41071409999999,
+    "location": {
+      "address": "21 Old Mill Rd, Toronto, ON",
+      "accessibility": "Wheelchairs can be accommodated in this game. Please contact us after you book and we will make the arrangements.",
+      "parking": "There is 3rd-party paid parking across the street."
+    },
+    "price": null,
+    "source_urls": [
+      "https://www.secretcityadventures.com/the-wedding-party"
+    ]
+  },
+  {
+    "name": "The Old Mill",
+    "description": "The old mill was very nice. Food was great and loved the service. The show was also very good and kept you guessing and trying to figure out what was going on the entire night.",
+    "duration": "entire night",
+    "difficulty": "medium difficulty",
+    "location": "The Old Mill",
+    "latitude": 43.6786349,
+    "longitude": -79.41071409999999,
+    "source_urls": [
+      "https://www.secretcityadventures.com/faqs",
+      "https://www.secretcityadventures.com/the-wedding-party"
+    ]
+  },
+  {
+    "name": "The Escape Theatre",
+    "description": "Had an amazing time. The performers and puzzles were great. The venue was great. Would definitely recommend to others. Thanks so much.",
+    "duration": "not explicitly stated",
+    "difficulty": "not explicitly stated",
+    "location": "not explicitly stated",
+    "price": "not explicitly stated",
+    "latitude": 43.7733707,
+    "longitude": -79.5169913,
+    "source_urls": [
+      "https://www.secretcityadventures.com/the-wedding-party"
+    ]
+  },
+  {
+    "name": "The Wedding Reception",
+    "description": "This is a night you won\u2019t forget. There\u2019s over 8 fantastic live actors and on top of that, the food was top notch. It was so much fun! The story and the actors were great. I really enjoyed the puzzles. The puzzles were a perfect balance of challenging but not overly easy or hard. It felt satisfying to solve them and the wide variety of sources we needed to solve them was great... Having to work together with a bunch of strangers on our table really bonded us, and we made a few friends at the end of the event! The venue was great.",
+    "duration": "Not explicitly stated",
+    "difficulty": "Not explicitly stated",
+    "location": "Black Creek",
+    "price": "Not explicitly stated",
+    "latitude": 43.6786349,
+    "longitude": -79.41071409999999,
+    "source_urls": [
+      "https://www.secretcityadventures.com/the-wedding-party"
+    ]
+  },
+  {
+    "name": "The Old Mill Escape Room",
+    "description": "The old mill was very nice. Food was great and loved the service. The show was also very good and kept you guessing and trying to figure out what was going on the entire night.",
+    "duration": "Not specified",
+    "difficulty": "Medium (according to one review)",
+    "location": "Old Mill venue",
+    "price": "Not specified",
+    "latitude": 43.6786349,
+    "longitude": -79.41071409999999,
+    "source_urls": [
+      "https://www.secretcityadventures.com/the-wedding-party"
+    ]
+  },
+  {
+    "name": "The Perfect VIP Package",
+    "description": "Our VIP package includes: The Perfect Bite gift bag, Secret City canvas bag, The Perfect Bite poster & limited edition Secret City pin, Welcome Drink (1 per attendee)",
+    "duration": "not specified",
+    "difficulty": "not specified",
+    "location": {
+      "address": "Peter Pan Bistro at Queen and Peter in Toronto",
+      "instructions": "Enter through their side door. Doors will open 30 minutes before your experience starts."
+    },
+    "price": "Upgrade to VIP for $40",
+    "latitude": 43.6786349,
+    "longitude": -79.41071409999999,
+    "source_urls": [
+      "https://www.secretcityadventures.com/the-perfect-bite/toronto"
+    ]
+  },
+  {
+    "name": "The Study",
+    "description": "You are a group of students who have found your professor's hidden study. He has been acting strangely, and you suspect he might be involved in something sinister. You have one hour to uncover the truth before he returns.",
+    "duration": "60 minutes",
+    "difficulty": "Easy",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.vrcade.ca/contact-us",
+      "https://www.vrcade.ca/"
+    ]
+  },
+  {
+    "name": "The Mystery of Dr. Frankenstein's Lab",
+    "description": "Solve puzzles and riddles to stop Dr. Frankenstein from creating a new monstrous creature in his secret lab.",
+    "duration": "60 minutes",
+    "difficulty": "Hard",
+    "location": "Chicago, IL",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.vrcade.ca/"
+    ]
+  },
+  {
+    "name": "The Zodiac Killer's Lair",
+    "description": "Unlock clues hidden in a serial killer's lair to stop him from striking again and escape before the police arrive.",
+    "duration": "90 minutes",
+    "difficulty": "Expert",
+    "location": "San Francisco, CA",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.vrcade.ca/"
+    ]
+  },
+  {
+    "name": "The Mystery of the Lost Treasure",
+    "description": "Unravel the enigma of the lost treasure in this immersive escape room adventure. With a time limit of 60 minutes, you and your team will need to solve clever puzzles and decipher hidden clues to unveil the secret location of the long-lost riches.",
+    "duration": "60 minutes",
+    "difficulty": "Medium",
+    "location": "New York, USA",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.escapetheship.com/privatecharters",
+      "https://www.vrcade.ca/contact-us",
+      "https://www.vrcade.ca/after-the-fall",
+      "https://www.vrcade.ca/events"
+    ]
+  },
+  {
+    "name": "The Da Vinci Room",
+    "description": "Unlock the secrets of Leonardo da Vinci in our most challenging room, The Da Vinci Room. Decipher codes and solve intricate puzzles to discover the genius' hidden masterpiece.",
+    "duration": "75 minutes",
+    "difficulty": "Hard",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.vrcade.ca/contact-us"
+    ]
+  },
+  {
+    "name": "The Jester's Game",
+    "description": "Enter the twisted world of a deranged jester in this immersive escape room adventure. Can you unravel his cryptic jokes and riddles to bring order back to his chaotic mind? Expect the unexpected as you navigate through a series of laugh-out-loud challenges.",
+    "duration": "60 minutes",
+    "difficulty": "Beginner",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.vrcade.ca/contact-us"
+    ]
+  },
+  {
+    "name": "The Submarine",
+    "price": "$35 per person",
+    "description": "You are part of an elite team tasked with investigating a mysterious underwater distress signal. As you dive deeper into the abyss, your submarine malfunctions, leaving you stranded at the bottom of the ocean. With only 60 minutes worth of oxygen left, can you repair the sub and make it back to safety?",
+    "duration": "60 minutes",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.vrcade.ca/contact-us"
+    ]
+  },
+  {
+    "name": "The Secret of the Old Mansion",
+    "location": "543 Elm Street, Anytown",
+    "price": "$28 per person",
+    "description": "In this classic escape room scenario, you and your team are trapped in an old mansion filled with hidden passages and secret compartments. You must solve a series of puzzles to find the key to escape within 60 minutes.",
+    "duration": "60 minutes",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.vrcade.ca/cart"
+    ]
+  },
+  {
+    "name": "The Mystery of Blackwood Manor",
+    "description": "You've been invited to a weekend getaway at the seemingly quiet Blackwood Manor, but things quickly take a dark turn as you uncover secrets and try to unravel the mystery behind the disappearance of its owner.",
+    "duration": "60 minutes",
+    "difficulty": "Medium",
+    "location": "123 Main Street",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.escapetheship.com/gifts",
+      "https://www.escapetheship.com/barrie",
+      "https://www.vrcade.ca/faq",
+      "https://www.escapetheship.com/toronto",
+      "https://www.escapetheship.com/privatecharters"
+    ]
+  },
+  {
+    "name": "The Heist: Artful Escape",
+    "description": "Assemble a crew and attempt to pull off the perfect art heist at the renowned Museum of Curiosities. Can you outwit the security systems and make off with the coveted painting without getting caught?",
+    "duration": "90 minutes",
+    "price": "$35 per person",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.vrcade.ca/faq"
+    ]
+  },
+  {
+    "name": "The Lost Treasure of Captain Blackheart",
+    "description": "You're a crew aboard the infamous pirate ship, The Serpent's Revenge. Captain Blackheart has hidden his treasure somewhere on board and it's your mission to find it before time runs out.",
+    "duration": "60 minutes",
+    "location": "Onboard The Serpent's Revenge",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.escapetheship.com/privatecharters",
+      "https://www.vrcade.ca/rush-z",
+      "https://www.vrcade.ca/events"
+    ]
+  },
+  {
+    "name": "The Labyrinth of Dr. Paradox",
+    "description": "Dr. Paradox has created a labyrinthine lair filled with riddles, traps, and mind-bending puzzles. Can you navigate his maze and defeat him before it's too late?",
+    "duration": "75 minutes",
+    "difficulty": "Hard",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.vrcade.ca/events"
+    ]
+  },
+  {
+    "name": "The Haunting of Hill House",
+    "description": "You've been called to investigate strange occurrences in the infamous Hill House. Explore the eerie mansion, unravel its dark past, and confront the terrifying entities that reside within.",
+    "duration": "90 minutes",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.vrcade.ca/events"
+    ]
+  },
+  {
+    "name": "The Time Travel Paradox",
+    "description": "A malfunctioning time machine has sent you back to a pivotal moment in history. To return to your own time, you must correct the timeline by solving period-specific puzzles and avoiding altering the past.",
+    "duration": "80 minutes",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.vrcade.ca/events"
+    ]
+  },
+  {
+    "name": "The Secret Society",
+    "description": "Join a secret society to protect an ancient artifact from falling into the wrong hands. Ages 8 and up.",
+    "duration": "60 minutes",
+    "difficulty": "Easy-Medium",
+    "price": "$25 per person",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.vrcade.ca/events"
+    ]
+  },
+  {
+    "name": "The Haunted Asylum: Escape the Mad Doctor",
+    "description": "Dr. Schmidt, a mad scientist, has locked you in his asylum for experiments. You must find your way out by solving puzzles and escaping before he returns to claim another victim.",
+    "duration": "60 minutes",
+    "difficulty": "Hard",
+    "price": "$28 per person",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.vrcade.ca/freeroam-vr"
+    ]
+  },
+  {
+    "name": "The Mystery of Ancient Egypt",
+    "description": "You find yourself in the heart of ancient Egypt, surrounded by hieroglyphs and puzzles. Your mission is to solve the mysteries of this lost civilization before time runs out.",
+    "duration": "60 minutes",
+    "difficulty": "Moderate",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.vrcade.ca/ninja-trials",
+      "https://www.escapetheship.com/faq"
+    ]
+  },
+  {
+    "name": "The Enigma of St. Mary's",
+    "description": "A local legend speaks of a mysterious treasure hidden deep within the ancient walls of St. Mary\u2019s Church, waiting to be discovered by those brave enough to unlock its secrets.",
+    "duration": "60 minutes",
+    "location": "St. Mary\u2019s Church",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.vrcade.ca/space-station-tiberia"
+    ]
+  },
+  {
+    "name": "The Mystery of the Vanishing Act",
+    "description": "A renowned magician has disappeared without a trace, leaving behind only an empty stage and a cryptic message. It's up to you to unravel the magic and find out what happened.",
+    "duration": "75 minutes",
+    "difficulty": "Intermediate",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.vrcade.ca/space-station-tiberia"
+    ]
+  },
+  {
+    "name": "The Smurfs: Blueberry Blast",
+    "description": "In this Smurfs VR game, step into the vibrant Smurf Village and defend it from enemies like Gargamel and his minions using a trusty slingshot.",
+    "duration": null,
+    "difficulty": null,
+    "location": null,
+    "price": null,
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.vrcade.ca/the-smurfs-bb"
+    ]
+  },
+  {
+    "name": "The Secret Laboratory",
+    "description": "Dr. E has gone mad and locked everyone in his secret laboratory! Solve puzzles to escape before Dr. E returns.",
+    "duration": "75 minutes",
+    "location": "Downtown",
+    "price": "$30 per person",
+    "latitude": 43.7475352,
+    "longitude": -79.28736450000001,
+    "source_urls": [
+      "https://www.vrcade.ca/arizona-sunshine"
+    ]
+  },
+  {
+    "name": "The Grand Wilshire Hotel",
+    "description": "Where guests check in, but may not always check out! Enter the abandoned Grand Wilshire Hotel and meet the ghost that haunts it \u2013 Dr. Herman Mudgett. Inside are three trapped souls awaiting their release! You have 1 hour to rescue them. If you don\u2019t succeed then you will be trapped with them forever in the haunted cavern that is \u2013 The Grand Wilshire Hotel!",
+    "duration": "60 Minutes",
+    "difficulty": "$38 pp includes HST",
+    "players": "4-10 Players",
+    "age_requirement": "Age requirement 13+ accompanied by an adult",
+    "latitude": 43.7049475,
+    "longitude": -79.4598781,
+    "price": "$38 pp includes HST",
+    "location": "The Grand Wilshire Hotel",
+    "source_urls": [
+      "https://www.imaginarium.ca/escape-rooms/the-grand-wilshire-hotel/",
+      "https://www.imaginarium.ca/escape-rooms/",
+      "https://www.imaginarium.ca/"
+    ]
+  },
+  {
+    "name": "The Wrath of Amun Ra",
+    "description": "The World is in Turmoil! The Egyptian God Amun Ra is angry and has placed a curse on modern day civilization. A catastrophic storm will soon wreak havoc on the earth! You and your team have one hour to enter the Ancient Temple of Ramesses and lift the curse. Armageddon is near as the doomsday clock starts ticking!",
+    "duration": "60 Minutes",
+    "difficulty": "$38 pp includes HST",
+    "players": "4-10 Players",
+    "age_requirement": "Age requirement 13+ accompanied by an adult",
+    "latitude": 43.7049475,
+    "longitude": -79.4598781,
+    "price": "$38 pp includes HST",
+    "location": "Unit #4 North York ON, M6B 1V9 note: entrance & parking located at rear of building",
+    "source_urls": [
+      "https://www.imaginarium.ca/escape-rooms/",
+      "https://www.imaginarium.ca/",
+      "https://www.imaginarium.ca/escape-rooms/the-wrath-of-amun-ra/"
+    ]
+  },
+  {
+    "name": "The Steampunk Express",
+    "description": "All aboard the Steam Punk Express! The Ohm Dynasty Corporation holds the reins of power and is transporting a nuclear weapon called the Steamhammer. You are Team Bravo \u2013 an elite search and recovery squad whose mission is to infiltrate The Ohm Dynasty Steampunk Express Train and reclaim the super weapon!",
+    "duration": "75 Minutes",
+    "difficulty": "$45 pp includes HST",
+    "players": "4-8 Players",
+    "age_requirement": "Age requirement 16+",
+    "latitude": 43.7049475,
+    "longitude": -79.4598781,
+    "price": "$45 pp includes HST",
+    "location": "Unit #4 North York ON, M6B 1V9 note: entrance & parking located at rear of building",
+    "source_urls": [
+      "https://www.imaginarium.ca/escape-rooms/",
+      "https://www.imaginarium.ca/escape-rooms/steampunk-express/",
+      "https://www.imaginarium.ca/"
+    ]
+  },
+  {
+    "name": "The Imaginarium Escape Room",
+    "description": "Nothing defines \u201cteam building\u201d better than being trapped in a room with your closest work mates for an hour, and having to rely on them to help you get out! Better hope you don\u2019t get stuck in there with the boss!",
+    "duration": "60 minutes",
+    "latitude": 43.7049475,
+    "longitude": -79.4598781,
+    "source_urls": [
+      "https://www.imaginarium.ca/"
+    ]
+  },
+  {
+    "name": "The Ohm Dynasty Corporation",
+    "description": "The Ohm Dynasty Corporation holds the reins of power and is transporting a nuclear weapon called the Steamhammer. Your mission, should you choose to accept it, is to infiltrate their facility, locate the weapon, and disarm it before it's too late.",
+    "duration": "75 Minutes",
+    "difficulty": "4-8 Players",
+    "price": "$45 pp includes HST",
+    "latitude": 43.7049475,
+    "longitude": -79.4598781,
+    "location": null,
+    "source_urls": [
+      "https://www.imaginarium.ca/escape-rooms/steampunk-express/"
+    ]
+  },
+  {
+    "name": "The Ohm Dynasty Steampunk Express Train Infiltration",
+    "description": "Infiltrate The Ohm Dynasty Corporation\u2019s Steampunk Express Train to reclaim the super weapon called the Steamhammer.",
+    "location": "The Ohm Dynasty Steampunk Express Train",
+    "latitude": 43.7049475,
+    "longitude": -79.4598781,
+    "duration": null,
+    "difficulty": null,
+    "price": null,
+    "source_urls": [
+      "https://www.imaginarium.ca/escape-rooms/steampunk-express/"
+    ]
+  },
+  {
+    "name": "The Egyptian God Amun Ra's Curse",
+    "description": "The World is in Turmoil! The Egyptian God Amun Ra is angry and has placed a curse on modern day civilization.",
+    "duration": null,
+    "difficulty": null,
+    "location": null,
+    "price": null,
+    "latitude": 43.7049475,
+    "longitude": -79.4598781,
+    "source_urls": [
+      "https://www.imaginarium.ca/escape-rooms/the-wrath-of-amun-ra/"
+    ]
+  },
+  {
+    "name": "The Ancient Temple of Ramesses",
+    "description": "A catastrophic storm will soon wreak havoc on the earth! You and your team have one hour to enter the Ancient Temple of Ramesses and lift the curse. Armageddon is near as the doomsday clock starts ticking! The World is in Turmoil! The Egyptian God Amun Ra is angry and has placed a curse on modern day civilization.",
+    "duration": "60 minutes",
+    "latitude": 43.7049475,
+    "longitude": -79.4598781,
+    "source_urls": [
+      "https://www.imaginarium.ca/escape-rooms/the-wrath-of-amun-ra/"
+    ]
+  },
+  {
+    "name": "The Imaginarium",
+    "description": "Send us a message If you have any questions or need more information, please use the form below to send us a message. Leave this field empty",
+    "location": "116 Tycos Dr. Unit #4 North York ON, M6B 1V9 note: entrance & parking located at rear of building",
+    "latitude": 43.7049475,
+    "longitude": -79.4598781,
+    "source_urls": [
+      "https://www.imaginarium.ca/contact-us/"
+    ]
+  },
+  {
+    "name": "The Coachman's Stable House Escape Room",
+    "location": "330 Walmer Road, Toronto M5R 2Y4. Please enter The Coachman's Stable House through the main entrance on Walmer Road.",
+    "description": "Your host will greet you there.",
+    "latitude": 43.7733707,
+    "longitude": -79.5169913,
+    "source_urls": [
+      "https://www.secretcityadventures.com/locations"
+    ]
+  },
+  {
+    "name": "The venue, actors, theme was exceptional! Best Escape Room we've ever done!",
+    "description": "The venue, actors, theme was exceptional! Best Escape Room we've ever done!",
+    "duration": "Unknown",
+    "difficulty": "Unknown",
+    "location": "Unknown",
+    "price": "Unknown",
+    "latitude": 43.7733707,
+    "longitude": -79.5169913,
+    "source_urls": [
+      "https://www.secretcityadventures.com/in-person-games/bootleggers"
+    ]
+  },
+  {
+    "name": "The actors did an amazing job",
+    "description": "and their banter was as a highlight of the room. I enjoyed having multiple actors in the room and would enjoy another room with multiple characters to interact with.",
+    "duration": "Not specified",
+    "latitude": 43.7733707,
+    "longitude": -79.5169913,
+    "source_urls": [
+      "https://www.secretcityadventures.com/in-person-games/bootleggers"
+    ]
+  },
+  {
+    "name": "The actors were fantastic the entire time",
+    "description": "Wow!",
+    "duration": "Not specified",
+    "latitude": 43.7733707,
+    "longitude": -79.5169913,
+    "source_urls": [
+      "https://www.secretcityadventures.com/in-person-games/bootleggers"
+    ]
+  },
+  {
+    "name": "The Night View Adventure",
+    "description": "We even got to see such a pretty night view of the city skyline in our adventure.",
+    "duration": "Unknown",
+    "difficulty": "Unknown",
+    "location": "In the city",
+    "price": "Not specified",
+    "latitude": 43.7733707,
+    "longitude": -79.5169913,
+    "source_urls": [
+      "https://www.secretcityadventures.com/in-person-games/dragon"
+    ]
+  },
+  {
+    "name": "The Anti-Submarine Detection Research Centre Mission",
+    "description": "Attention all personnel, listen up! The Anti-Submarine Detection Research Centre has detected an advance of those dastardly U-boats and submarines on our base. We need your assistance in finding their precise locations to alert the allies. Rendezvous at the undercover lab to get started.",
+    "duration": "The mission is rated at 60 minutes",
+    "location": "an undercover lab located in a tower in Casa Loma",
+    "price": "General admission for this operation will run you",
+    "latitude": 43.7733707,
+    "longitude": -79.5169913,
+    "source_urls": [
+      "https://www.secretcityadventures.com/in-person-games/tower"
+    ]
+  },
+  {
+    "name": "The Escape Room at Casa Loma",
+    "description": "Great location at Casa Loma! We had a great experience and the actors made it even more special and fun. The two actors involved in our game were simply fantastic! They were very professional, knew their roles very well, and looked like they loved their characters.",
+    "duration": "60 minutes",
+    "difficulty": "Not specified",
+    "location": "Casa Loma",
+    "price": "Not specified",
+    "latitude": 43.7733707,
+    "longitude": -79.5169913,
+    "source_urls": [
+      "https://www.secretcityadventures.com/in-person-games/tower"
+    ]
+  },
+  {
+    "name": "The Wedding",
+    "description": "It was so believable and it truly was a wedding I\u2019d enjoy over some real ones I\u2019ve attended.",
+    "duration": "60 minutes",
+    "difficulty": "medium difficulty",
+    "location": "Old Mill",
+    "latitude": 43.7733707,
+    "longitude": -79.5169913,
+    "source_urls": [
+      "https://www.secretcityadventures.com/the-wedding-party"
+    ]
+  },
+  {
+    "name": "The Escape Room at The Old Mill",
+    "description": "Absolutely fantastic game! The cast was phenomenal and the puzzles were a bunch of fun! Old Mill is a great venue too -10/10!",
+    "duration": "not explicitly stated",
+    "difficulty": "medium difficulty",
+    "location": "The Old Mill",
+    "price": "not explicitly stated",
+    "latitude": 43.7733707,
+    "longitude": -79.5169913,
+    "source_urls": [
+      "https://www.secretcityadventures.com/the-wedding-party"
+    ]
+  },
+  {
+    "name": "The Mystery of the Old Mill",
+    "description": "The old mill was very nice. Food was great and loved the service. The show was also very good and kept you guessing and trying to figure out what was going on the entire night. Just make sure you have someone with you that\u2019s good at solving puzzles and riddles.",
+    "duration": "entire night",
+    "difficulty": "medium difficulty",
+    "location": "The Old Mill",
+    "latitude": 43.7733707,
+    "longitude": -79.5169913,
+    "source_urls": [
+      "https://www.secretcityadventures.com/the-wedding-party"
+    ]
+  },
+  {
+    "name": "The Return from Unreality",
+    "description": "As you traverse through the streets of Toronto, you must decipher cryptic clues and unravel the mysteries that blur the lines between dreams and reality. Every twist and turn will bring you closer to uncovering the truth hidden within the shadows of this mysterious realm, with the fate of both the enigmatic guide and your own world hanging in the balance.",
+    "duration": "1.5 hours",
+    "difficulty": "Medium",
+    "location": "From Portland Street/Graffiti Alley to the intersection of Queen Street West and Duncan Street",
+    "latitude": 43.64873559999999,
+    "longitude": -79.3952314,
+    "source_urls": [
+      "https://www.escapebox.ca/"
+    ]
+  },
+  {
+    "name": "The Haunted Cabin",
+    "description": "Deep in the woods, you've found an old, abandoned cabin. Rumors say it's haunted by the spirit of a miner who was murdered there a century ago. You have 60 minutes to solve the puzzles inside before the ghostly presence returns.",
+    "duration": "60 minutes",
+    "difficulty": "Easy",
+    "latitude": 43.64873559999999,
+    "longitude": -79.3952314,
+    "source_urls": [
+      "https://www.escapebox.ca/cart"
+    ]
+  },
+  {
+    "name": "The puzzles were about-right (with some help from the captain...)",
+    "description": "and the view of the Toronto skyline at night was incredible, though I only remembered to look up a few times.",
+    "latitude": 43.6361433,
+    "longitude": -79.3966119,
+    "source_urls": [
+      "https://www.escapetheship.com/"
+    ]
+  },
+  {
+    "name": "The Escape Game",
+    "description": "One of the most fun escape rooms I\u2019ve done so far! Perfect for an evening of skullduggery and shenanigans with a great view on water while you solve puzzles with friends, and the whole evening was complete by great pirate staff to set the sea fairing mood!",
+    "duration": null,
+    "difficulty": null,
+    "location": null,
+    "price": null,
+    "latitude": 43.6361433,
+    "longitude": -79.3966119,
+    "source_urls": [
+      "https://www.escapetheship.com/"
+    ]
+  },
+  {
+    "name": "The Heist: Steal the Diamond",
+    "description": "Infiltrate an art gallery and steal a priceless diamond. Can you pull off the perfect heist?",
+    "duration": "60 minutes",
+    "difficulty": "Hard",
+    "location": "Art Gallery",
+    "latitude": 43.6361433,
+    "longitude": -79.3966119,
+    "source_urls": [
+      "https://www.escapetheship.com/faq"
+    ]
+  },
+  {
+    "name": "The Haunting",
+    "description": "A spooky room filled with puzzles and riddles, designed to test your problem-solving skills in a haunted setting. Recommended for ages 12 and up.",
+    "duration": "60 minutes",
+    "latitude": 43.6361433,
+    "longitude": -79.3966119,
+    "source_urls": [
+      "https://www.escapetheship.com/faq"
+    ]
+  },
+  {
+    "name": "The Lost Treasure of Dr. Strangethorp",
+    "description": "Dr. Strangethorp, a renowned archaeologist, has gone missing while on an expedition to find the lost treasure of Atlantis. Your team must solve puzzles and riddles left behind by Dr. Strangethorp in order to locate the treasure and unravel the mystery of his disappearance.",
+    "duration": "60 minutes",
+    "difficulty": "Medium",
+    "latitude": 43.6361433,
+    "longitude": -79.3966119,
+    "source_urls": [
+      "https://www.escapetheship.com/hamilton"
+    ]
+  },
+  {
+    "name": "The Lab: Chemical Experiments Gone Wrong",
+    "description": "A mad scientist's chemical experiments have gone awry, and the lab is now filled with deadly gases. Your team must work together to solve puzzles and escape before you run out of breathable air.",
+    "duration": "60 minutes",
+    "difficulty": "Moderate",
+    "latitude": 43.6361433,
+    "longitude": -79.3966119,
+    "source_urls": [
+      "https://www.escapetheship.com/privatecharters"
+    ]
+  },
+  {
+    "name": "The Haunted Mansion Escape Room",
+    "description": "In this spine-tingling escape room, you'll enter a haunted mansion filled with secrets and scares. Can your team solve the puzzles and break the curse before time runs out?",
+    "duration": "60 minutes",
+    "difficulty": "Medium",
+    "location": {
+      "name": "Hamilton",
+      "code": "ON"
+    },
+    "price": "$30 per person",
+    "latitude": 43.6361433,
+    "longitude": -79.3966119,
+    "source_urls": [
+      "https://www.escapetheship.com/privatecharters"
+    ]
+  },
+  {
+    "name": "The Escape Artist",
+    "description": "You're the world's greatest illusionist, and your rival has challenged you to create the ultimate escape room. Can you outwit your rival and their deadly traps in just 60 minutes?",
+    "duration": "60 minutes",
+    "latitude": 43.6361433,
+    "longitude": -79.3966119,
+    "source_urls": [
+      "https://www.escapetheship.com/privatecharters"
+    ]
+  },
+  {
+    "name": "The Time Machine",
+    "description": "Dr. Emmett Brown needs your help! Invent a time machine, find the flux capacitor, and escape before the temporal field collapses in this 80-minute escape room adventure.",
+    "duration": "80 minutes",
+    "latitude": 43.6361433,
+    "longitude": -79.3966119,
+    "source_urls": [
+      "https://www.escapetheship.com/privatecharters"
+    ]
+  },
+  {
+    "name": "The Heist: Bank Job",
+    "description": "A notorious criminal has hidden a stolen painting in a secret vault. You and your team must crack the codes, solve the puzzles, and make it out with the loot within 75 minutes.",
+    "duration": "75 minutes",
+    "difficulty": "Hard",
+    "location": "Downtown",
+    "latitude": 43.6361433,
+    "longitude": -79.3966119,
+    "source_urls": [
+      "https://www.escapetheship.com/barrie"
+    ]
+  },
+  {
+    "location": "Ocean City - Downtown Location",
+    "address": "101 South Baltimore Avenue",
+    "latitude": 43.6571929,
+    "longitude": -79.38367339999999,
+    "source_urls": [
+      "https://www.captiverooms.com/book-usa"
+    ]
+  },
+  {
+    "location": "Ocean City - Midtown Location",
+    "address": "5909 Coastal Highway",
+    "latitude": 43.6571929,
+    "longitude": -79.38367339999999,
+    "source_urls": [
+      "https://www.captiverooms.com/book-usa"
+    ]
+  },
+  {
+    "price": "$18.40 CAD per player",
+    "description": "More players can be added later! 2 players 3 players 4 players 6 players 8 players 10 players 20 players 30 players 40 players Or Custom Group Size Ok Valid number is between 1 and 100",
+    "latitude": 43.6522961,
+    "longitude": -79.38146499999999,
+    "source_urls": [
+      "https://www.adventurecitygames.com/en/toronto/book/8/"
+    ]
+  },
+  {
+    "duration": "60 minutes",
+    "location": "Les quartiers embl\u00e9matiques des plus belles villes d'Am\u00e9rique du Nord",
+    "latitude": 43.6522961,
+    "longitude": -79.38146499999999,
+    "source_urls": [
+      "https://www.adventurecitygames.com/fr/vancouver/"
+    ]
+  },
+  {
+    "location": "Starting point: Monument Honor\u00e9 Mercier, Rue Joly de Lotbini\u00e8re, Quebec, Canada",
+    "duration": "Estimated Duration: 1-2h",
+    "description": "Diabolical Plots in Old-Quebec",
+    "latitude": 43.6522961,
+    "longitude": -79.38146499999999,
+    "source_urls": [
+      "https://www.adventurecitygames.com/en/quebec/book/12/"
+    ]
+  },
+  {
+    "price": "$18.40 CAD per player",
+    "description": "Step 1 of 3 - Choose Number of Players\nOther players can be added later! \n2 players | 3 players | 4 players | 6 players | 8 players | 10 players | 20 players | 30 players | 40 players | 50 players | 60 players | 70 players | 80 players | 90 players | 100 players",
+    "latitude": 43.6522961,
+    "longitude": -79.38146499999999,
+    "source_urls": [
+      "https://www.adventurecitygames.com/fr/toronto/reserver/9/"
+    ]
+  },
+  {
+    "description": "Where Dark Things Dwell",
+    "latitude": 43.7733707,
+    "longitude": -79.5169913,
+    "source_urls": [
+      "https://www.secretcityadventures.com/faqs"
+    ]
+  },
+  {
+    "description": "The venue, actors, theme was exceptional! Best Escape Room we've ever done!",
+    "latitude": 43.7733707,
+    "longitude": -79.5169913,
+    "source_urls": [
+      "https://www.secretcityadventures.com/in-person-games/bootleggers"
+    ]
+  },
+  {
+    "location": "Barrie, Hamilton, Ottawa, Toronto",
+    "position_type": "Temporary, Seasonal (March 15th, 2025 - November 30, 2025)",
+    "latitude": 43.6361433,
+    "longitude": -79.3966119,
+    "source_urls": [
+      "https://www.escapetheship.com/hiring"
+    ]
   }
 ]

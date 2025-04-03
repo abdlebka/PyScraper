@@ -59,7 +59,7 @@ def extract_with_llm(text):
         10. **HIGH CONFIDENCE MATCHES ONLY**: Only include an activity if you are highly confident that all information is directly from the text.
     """
     print("Extracting activities with LLM...")
-    response = ollama.chat(model='mistral:7b-instruct', messages=[{"role": "user", "content": prompt}])
+    response = ollama.chat(model='mistral-nemo:12b-instruct-2407-q4_K_M', messages=[{"role": "user", "content": prompt}])
     print("LLM extraction completed.")
 
     content = response['message']['content']

@@ -199,4 +199,4 @@ if __name__ == "__main__":
     print(f"Found {len(businesses_with_websites)} businesses with websites")
 
     # Run the scraper
-    scraped_data = scrape_with_scrapy(businesses_with_websites, max_depth=2)
+    scraped_data = scrape_with_scrapy(businesses_with_websites, max_depth=3)

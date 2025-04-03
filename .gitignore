@@ -5,3 +5,4 @@ raw_text.json
 places.json
 scraped_data.json
 activities.json
+.env
